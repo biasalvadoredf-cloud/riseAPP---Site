@@ -1,0 +1,1021 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+}
+
+/* VARIÁVEIS */
+:root {
+    --verde-escuro: #135E4B;
+    --verde-medio: #2F8F68;
+    --verde-claro: #55B96E;
+    --verde-suave: #EAF7F0;
+
+    --branco: #ffffff;
+    --cinza-fundo: #F7F9F8;
+    --cinza-card: #FAFBFA;
+    --cinza-borda: #E1E5E3;
+
+    --texto: #061921;
+    --texto-suave: #6B7280;
+}
+
+/* BASE */
+body {
+    background-color: var(--cinza-fundo);
+    color: var(--texto);
+}
+
+/* MENU LATERAL */
+header {
+    width: 230px;
+    min-height: 100vh;
+    background-color: var(--verde-escuro);
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 55px 20px 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+header img {
+    width: 105px;
+    max-width: 105px;
+    margin-bottom: 70px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    text-align: center;
+}
+
+header nav a {
+    color: var(--branco);
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+header nav a:hover,
+header nav .menu-ativo,
+header nav .ativo {
+    color: var(--verde-claro);
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    margin-left: 230px;
+    min-height: 100vh;
+    background-color: var(--cinza-fundo);
+}
+
+/* TÍTULOS PADRÃO */
+.caminho,
+.titulo-pagina {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--texto);
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* ================================================= */
+/* PÁGINA TREINO SEMANAL */
+/* ================================================= */
+
+.treino {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 45px 32px 80px;
+}
+
+/* ABAS */
+.abas {
+    width: 100%;
+    max-width: 620px;
+    margin: 0 auto 34px;
+
+    background-color: var(--branco);
+    border: 1px solid var(--cinza-borda);
+    border-radius: 18px;
+    padding: 7px;
+
+    display: flex;
+    gap: 8px;
+
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.04);
+}
+
+.abas a {
+    flex: 1;
+    text-align: center;
+    color: var(--texto-suave);
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 12px;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.abas a:hover,
+.abas .aba-ativa {
+    background-color: var(--verde-claro);
+    color: var(--branco);
+}
+
+/* TÍTULO DO TREINO */
+.titulo-treino {
+    width: 100%;
+    text-align: center;
+    color: var(--verde-escuro);
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 26px;
+    line-height: 1.35;
+}
+
+.titulo-treino strong {
+    font-weight: 900;
+}
+
+/* BOTÕES A B C */
+.dias {
+    width: 100%;
+    max-width: 780px;
+    margin: 0 auto;
+
+    display: flex;
+    overflow: hidden;
+    border-radius: 18px 18px 0 0;
+}
+
+.dias a {
+    width: 33.33%;
+    background-color: var(--verde-medio);
+    color: var(--branco);
+    padding: 15px;
+    font-size: 19px;
+    font-weight: 900;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.dias a:hover,
+.dias .dia-ativo {
+    background-color: var(--verde-escuro);
+}
+
+/* LISTA DE EXERCÍCIOS */
+.lista {
+    width: 100%;
+    max-width: 780px;
+    margin: 0 auto;
+
+    background-color: var(--branco);
+    padding: 24px;
+    border: 1px solid var(--cinza-borda);
+    border-top: none;
+    border-radius: 0 0 24px 24px;
+
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+}
+
+.exercicio {
+    background-color: var(--cinza-card);
+    min-height: 82px;
+    margin-bottom: 14px;
+    border-radius: 18px;
+    padding: 13px 18px;
+    border: 1px solid var(--cinza-borda);
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    transition: 0.3s;
+}
+
+.exercicio:last-child {
+    margin-bottom: 0;
+}
+
+.exercicio:hover {
+    background-color: var(--verde-suave);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(19, 94, 75, 0.12);
+}
+
+.bolinha {
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+    border: 3px solid var(--verde-escuro);
+    border-radius: 50%;
+    background-color: var(--branco);
+}
+
+.texto-exercicio {
+    flex: 1;
+}
+
+.texto-exercicio h2 {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--texto);
+    margin-bottom: 5px;
+}
+
+.texto-exercicio p {
+    font-size: 13px;
+    color: var(--texto-suave);
+    line-height: 1.45;
+}
+
+.exercicio img {
+    width: 88px;
+    height: 60px;
+    object-fit: contain;
+    background-color: var(--branco);
+    border-radius: 16px;
+    padding: 7px;
+    border: 1px solid var(--cinza-borda);
+}
+
+/* ================================================= */
+/* PÁGINA HOJE */
+/* ================================================= */
+
+.hoje {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 45px 32px 80px;
+}
+
+.hoje h3 {
+    font-size: 15px;
+    font-weight: 800;
+    margin: 28px 0 18px;
+}
+
+.amanha {
+    margin-top: 50px;
+}
+
+.card-treino {
+    background-color: var(--branco);
+    border: 1px solid var(--cinza-borda);
+    border-radius: 18px;
+    margin-bottom: 14px;
+    padding: 14px 18px;
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.035);
+    transition: 0.3s;
+}
+
+.card-treino:hover {
+    background-color: var(--verde-suave);
+    transform: translateY(-2px);
+}
+
+.card-treino img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.card-treino div {
+    flex: 1;
+}
+
+.card-treino h2 {
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--texto);
+    margin-bottom: 4px;
+}
+
+.card-treino p {
+    font-size: 12px;
+    color: var(--texto-suave);
+}
+
+.card-treino a {
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    padding: 9px 18px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+/* ================================================= */
+/* PÁGINA EXECUÇÃO */
+/* ================================================= */
+
+.execucao {
+    width: 100%;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 45px 32px 80px;
+}
+
+/* TÍTULO */
+.execucao .caminho {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--texto);
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* CARD DO TOPO */
+.topo-execucao {
+    background-color: var(--branco);
+    border: 1px solid var(--cinza-borda);
+    border-radius: 22px;
+    padding: 24px 28px;
+    margin-bottom: 28px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+}
+
+.topo-execucao h3 {
+    background-color: var(--verde-suave);
+    color: var(--verde-escuro);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.topo-execucao h2 {
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--verde-escuro);
+    text-align: right;
+}
+
+/* IMAGEM */
+.imagem-execucao {
+    width: 100%;
+    max-width: 540px;
+    height: 290px;
+    object-fit: cover;
+
+    display: block;
+    margin: 0 auto 28px;
+
+    background-color: var(--branco);
+    border: 1px solid var(--cinza-borda);
+    border-radius: 24px;
+    padding: 12px;
+
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+}
+
+/* DESCRIÇÃO */
+.descricao {
+    background-color: var(--branco);
+    border: 1px solid var(--cinza-borda);
+    border-radius: 20px;
+    padding: 22px;
+    margin-bottom: 18px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.035);
+}
+
+.descricao h3 {
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--texto);
+    margin-bottom: 8px;
+}
+
+.descricao p {
+    font-size: 14px;
+    color: var(--texto-suave);
+    line-height: 1.6;
+}
+
+/* DADOS */
+.dados {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-bottom: 26px;
+}
+
+.dados div {
+    background-color: var(--branco);
+    border: 1px solid var(--cinza-borda);
+    border-radius: 20px;
+    padding: 18px;
+    text-align: center;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.035);
+}
+
+.dados h3 {
+    font-size: 13px;
+    color: var(--texto-suave);
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.dados p {
+    font-size: 15px;
+    color: var(--texto);
+    font-weight: 900;
+}
+
+/* BOTÃO */
+.concluir {
+    display: block;
+    width: 100%;
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 15px;
+    border-radius: 18px;
+    font-size: 15px;
+    font-weight: 900;
+    transition: 0.3s;
+
+    box-shadow: 0 10px 24px rgba(19, 94, 75, 0.18);
+}
+
+.concluir:hover {
+    background-color: var(--verde-claro);
+    transform: translateY(-2px);
+}
+
+/* ================================================= */
+/* RODAPÉ */
+/* ================================================= */
+
+footer {
+    margin-left: 230px;
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 45px 70px 35px;
+}
+
+.rodape div {
+    width: 260px;
+}
+
+.logo-rodape,
+.rodape img {
+    width: 130px;
+    margin-bottom: 18px;
+}
+
+.rodape h3 {
+    font-size: 17px;
+    margin-bottom: 16px;
+}
+
+.rodape a {
+    display: block;
+    color: var(--branco);
+    font-size: 14px;
+    margin-bottom: 9px;
+}
+
+.rodape p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.copy {
+    background-color: #115544;
+    text-align: center;
+    padding: 16px;
+    font-size: 13px;
+}
+
+/* ================================================= */
+/* RESPONSIVO */
+/* ================================================= */
+
+/* 1025PX */
+@media (max-width: 1025px) {
+
+    header {
+        width: 210px;
+    }
+
+    main,
+    footer {
+        margin-left: 210px;
+    }
+
+    .treino,
+    .hoje,
+    .execucao {
+        max-width: 860px;
+        padding: 42px 28px 70px;
+    }
+
+    .dias,
+    .lista {
+        max-width: 740px;
+    }
+
+    .titulo-treino {
+        font-size: 21px;
+    }
+
+    .imagem-execucao {
+        max-width: 520px;
+        height: 270px;
+    }
+}
+
+/* 768PX */
+@media (max-width: 768px) {
+
+    header {
+        position: static;
+        width: 100%;
+        min-height: auto;
+        padding: 22px 18px;
+    }
+
+    header img {
+        width: 90px;
+        margin-bottom: 24px;
+    }
+
+    header nav {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    header nav a {
+        font-size: 12px;
+        padding: 7px 10px;
+        border-radius: 20px;
+    }
+
+    header nav a:hover,
+    header nav .menu-ativo,
+    header nav .ativo {
+        background-color: var(--verde-claro);
+        color: var(--branco);
+    }
+
+    main,
+    footer {
+        margin-left: 0;
+    }
+
+    .treino,
+    .hoje,
+    .execucao {
+        max-width: 720px;
+        padding: 36px 24px 60px;
+    }
+
+    .caminho,
+    .titulo-pagina,
+    .execucao .caminho {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .abas {
+        max-width: 100%;
+    }
+
+    .titulo-treino {
+        font-size: 20px;
+    }
+
+    .dias,
+    .lista {
+        max-width: 100%;
+    }
+
+    .topo-execucao {
+        padding: 22px;
+    }
+
+    .imagem-execucao {
+        max-width: 100%;
+        height: 250px;
+    }
+
+    .dados {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 28px;
+        padding: 38px 24px 28px;
+    }
+
+    .rodape div {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+/* 426PX */
+@media (max-width: 426px) {
+
+    header {
+        padding: 20px 12px;
+    }
+
+    header img {
+        width: 82px;
+        margin-bottom: 20px;
+    }
+
+    header nav {
+        gap: 8px;
+    }
+
+    header nav a {
+        font-size: 11px;
+        padding: 7px 9px;
+    }
+
+    .treino,
+    .hoje,
+    .execucao {
+        padding: 30px 14px 50px;
+    }
+
+    .caminho,
+    .titulo-pagina,
+    .execucao .caminho {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .abas {
+        border-radius: 15px;
+        padding: 6px;
+        margin-bottom: 28px;
+    }
+
+    .abas a {
+        font-size: 11px;
+        padding: 8px 6px;
+    }
+
+    .titulo-treino {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .dias {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .dias a {
+        font-size: 17px;
+        padding: 12px;
+    }
+
+    .lista {
+        padding: 14px;
+        border-radius: 0 0 18px 18px;
+    }
+
+    .exercicio {
+        min-height: 78px;
+        gap: 12px;
+        padding: 11px;
+        border-radius: 15px;
+    }
+
+    .bolinha {
+        width: 13px;
+        height: 13px;
+        min-width: 13px;
+    }
+
+    .texto-exercicio h2 {
+        font-size: 14px;
+    }
+
+    .texto-exercicio p {
+        font-size: 12px;
+    }
+
+    .exercicio img {
+        width: 76px;
+        height: 56px;
+        border-radius: 14px;
+    }
+
+    .card-treino {
+        flex-direction: column;
+        text-align: center;
+        padding: 18px;
+    }
+
+    .card-treino a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .topo-execucao {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 16px;
+        border-radius: 18px;
+    }
+
+    .topo-execucao h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .topo-execucao h3 {
+        font-size: 13px;
+        padding: 7px 14px;
+    }
+
+    .imagem-execucao {
+        height: 210px;
+        border-radius: 18px;
+        padding: 10px;
+        margin-bottom: 22px;
+    }
+
+    .descricao {
+        padding: 18px 16px;
+        border-radius: 16px;
+    }
+
+    .descricao h3 {
+        font-size: 15px;
+    }
+
+    .descricao p {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .dados {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .dados div {
+        padding: 16px;
+    }
+
+    .concluir {
+        padding: 14px;
+        font-size: 14px;
+        border-radius: 14px;
+    }
+
+    .rodape {
+        padding: 35px 18px 24px;
+    }
+
+    .logo-rodape,
+    .rodape img {
+        width: 105px;
+    }
+
+    .rodape h3 {
+        font-size: 15px;
+    }
+
+    .rodape p,
+    .rodape a {
+        font-size: 12px;
+    }
+}
+
+/* 376PX */
+@media (max-width: 376px) {
+
+    header {
+        padding: 18px 10px;
+    }
+
+    header img {
+        width: 78px;
+        margin-bottom: 18px;
+    }
+
+    header nav {
+        gap: 7px;
+    }
+
+    header nav a {
+        font-size: 10.5px;
+        padding: 6px 8px;
+    }
+
+    .treino,
+    .hoje,
+    .execucao {
+        padding: 28px 12px 45px;
+    }
+
+    .titulo-treino {
+        font-size: 17px;
+    }
+
+    .exercicio {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .texto-exercicio h2 {
+        font-size: 13px;
+    }
+
+    .texto-exercicio p {
+        font-size: 11px;
+    }
+
+    .exercicio img {
+        width: 68px;
+        height: 52px;
+    }
+
+    .topo-execucao h2 {
+        font-size: 19px;
+    }
+
+    .imagem-execucao {
+        height: 190px;
+    }
+
+    .descricao p {
+        font-size: 12px;
+    }
+
+    .dados h3 {
+        font-size: 12px;
+    }
+
+    .dados p {
+        font-size: 14px;
+    }
+
+    .rodape h3 {
+        font-size: 15px;
+    }
+
+    .rodape p,
+    .rodape a {
+        font-size: 12px;
+    }
+}
+
+/* 321PX */
+@media (max-width: 321px) {
+
+    header {
+        padding: 16px 8px;
+    }
+
+    header img {
+        width: 72px;
+        margin-bottom: 16px;
+    }
+
+    header nav {
+        gap: 6px;
+    }
+
+    header nav a {
+        font-size: 9.5px;
+        padding: 6px 7px;
+    }
+
+    .treino,
+    .hoje,
+    .execucao {
+        padding: 26px 10px 42px;
+    }
+
+    .abas {
+        gap: 5px;
+    }
+
+    .abas a {
+        font-size: 10px;
+        padding: 7px 4px;
+    }
+
+    .titulo-treino {
+        font-size: 16px;
+    }
+
+    .lista {
+        padding: 12px;
+    }
+
+    .exercicio {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+    .bolinha {
+        display: none;
+    }
+
+    .exercicio img {
+        width: 110px;
+        height: 75px;
+    }
+
+    .topo-execucao {
+        padding: 18px 12px;
+    }
+
+    .topo-execucao h2 {
+        font-size: 18px;
+    }
+
+    .imagem-execucao {
+        height: 170px;
+        padding: 8px;
+    }
+
+    .descricao {
+        padding: 16px 12px;
+    }
+
+    .dados div {
+        padding: 14px 12px;
+    }
+
+    .concluir {
+        font-size: 13px;
+    }
+
+    .rodape {
+        padding: 28px 12px 20px;
+    }
+
+    .logo-rodape,
+    .rodape img {
+        width: 90px;
+    }
+
+    .rodape h3 {
+        font-size: 14px;
+    }
+
+    .rodape p,
+    .rodape a {
+        font-size: 11px;
+    }
+
+    .copy {
+        font-size: 10px;
+        padding: 12px;
+    }
+}

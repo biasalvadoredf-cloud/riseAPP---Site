@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+}
+
+:root {
+    --verde: #135E4B;
+    --verde-claro: #55B96E;
+    --verde-hover: #0b8a4b;
+    --verde-suave: #EAF7F0;
+
+    --branco: #ffffff;
+    --fundo: #F7F9F8;
+    --card: #ffffff;
+    --borda: #E1E5E3;
+
+    --texto: #061921;
+    --texto-suave: #6B7280;
+
+    --vermelho: #ef4444;
+    --azul: #3b82f6;
+    --laranja: #f97316;
+
+    --copy: #115544;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--fundo);
+    color: var(--texto);
+}
+
+/* MENU LATERAL */
+header {
+    width: 230px;
+    min-height: 100vh;
+    background-color: var(--verde);
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 55px 20px 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+header img {
+    width: 105px;
+    max-width: 105px;
+    margin-bottom: 65px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+}
+
+header nav a {
+    color: var(--branco);
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+header nav a:hover,
+header nav .menu-ativo {
+    color: var(--verde-claro);
+}
+
+.modo-admin {
+    color: var(--branco);
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 35px;
+}
+
+/* MAIN */
+main {
+    width: calc(100% - 230px);
+    min-height: 100vh;
+    margin-left: 230px;
+    padding: 42px 42px 70px;
+    background-color: var(--fundo);
+}
+
+/* TOPO */
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 26px;
+}
+
+.topo h1 {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--texto);
+}
+
+.acoes-topo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.acoes-topo input,
+.acoes-topo select {
+    width: 230px;
+    padding: 11px 14px;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    font-size: 13px;
+    background-color: var(--branco);
+    outline: none;
+}
+
+.acoes-topo button,
+.btn-verde {
+    background-color: var(--verde);
+    color: var(--branco);
+    padding: 11px 16px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.acoes-topo button:hover,
+.btn-verde:hover {
+    background-color: var(--verde-hover);
+}
+
+/* CARDS RESUMO */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.card {
+    background-color: var(--card);
+    border: 1px solid var(--borda);
+    border-radius: 18px;
+    padding: 22px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+}
+
+.card h3 {
+    font-size: 13px;
+    color: var(--texto-suave);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.card h2 {
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--texto);
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: var(--verde-hover);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+/* FORMULÁRIO */
+.form-card {
+    background-color: var(--card);
+    border: 1px solid var(--borda);
+    border-radius: 18px;
+    padding: 26px;
+    max-width: 820px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.campo label {
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--texto-suave);
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    padding: 11px 13px;
+    font-size: 13px;
+    color: var(--texto);
+    background-color: var(--branco);
+    outline: none;
+}
+
+.campo textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: var(--verde);
+}
+
+.campo-full {
+    grid-column: span 2;
+}
+
+.form-acoes {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.btn-cinza {
+    background-color: var(--branco);
+    color: var(--texto-suave);
+    border: 1px solid var(--borda);
+    padding: 11px 16px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+/* TABELA */
+.tabela {
+    background-color: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 16px 18px;
+    text-align: left;
+    font-size: 13px;
+    border-bottom: 1px solid var(--borda);
+    vertical-align: middle;
+}
+
+th {
+    font-weight: 800;
+    color: #374151;
+    background-color: #fbfcfb;
+}
+
+.status {
+    display: inline-block;
+    padding: 5px 11px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.status.ativo {
+    background-color: #EAF7F0;
+    color: var(--verde);
+}
+
+.status.pendente {
+    background-color: #fff3e0;
+    color: var(--laranja);
+}
+
+.status.cancelado {
+    background-color: #fdecea;
+    color: var(--vermelho);
+}
+
+.mais {
+    padding: 6px 12px;
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    background-color: var(--branco);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* AUTENTICAÇÃO ADMIN */
+.auth-body {
+    background-color: var(--verde);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 390px;
+    background-color: var(--branco);
+    border-radius: 24px;
+    padding: 34px 30px;
+    text-align: center;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.16);
+}
+
+.auth-card img {
+    width: 105px;
+    margin-bottom: 24px;
+}
+
+.auth-card h1 {
+    font-size: 24px;
+    color: var(--texto);
+    margin-bottom: 8px;
+}
+
+.auth-card p {
+    font-size: 13px;
+    color: var(--texto-suave);
+    margin-bottom: 24px;
+}
+
+.auth-card form {
+    text-align: left;
+}
+
+.auth-card .campo {
+    margin-bottom: 15px;
+}
+
+.auth-card button {
+    width: 100%;
+    background-color: var(--verde);
+    color: var(--branco);
+    padding: 13px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.auth-link {
+    display: block;
+    text-align: center;
+    color: var(--verde);
+    font-size: 12px;
+    font-weight: 800;
+    margin-top: 18px;
+}
+
+/* RODAPÉ */
+footer {
+    margin-left: 230px;
+    background-color: var(--verde);
+    color: var(--branco);
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 42px 60px 32px;
+}
+
+.rodape div {
+    width: 260px;
+}
+
+.rodape img {
+    width: 130px;
+    margin-bottom: 18px;
+}
+
+.rodape h3 {
+    font-size: 17px;
+    margin-bottom: 14px;
+}
+
+.rodape a,
+.rodape p {
+    color: var(--branco);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.rodape a {
+    display: block;
+    margin-bottom: 9px;
+}
+
+.copy {
+    text-align: center;
+    background-color: var(--copy);
+    padding: 16px;
+    font-size: 13px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 1025px) {
+    header {
+        width: 210px;
+    }
+
+    main {
+        width: calc(100% - 210px);
+        margin-left: 210px;
+        padding: 36px 28px 60px;
+    }
+
+    footer {
+        margin-left: 210px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tabela {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 820px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        position: static;
+        width: 100%;
+        min-height: auto;
+        padding: 22px 18px;
+    }
+
+    header img {
+        width: 90px;
+        margin-bottom: 24px;
+    }
+
+    header nav {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    header nav a {
+        font-size: 12px;
+        padding: 7px 10px;
+        border-radius: 20px;
+    }
+
+    header nav a:hover,
+    header nav .menu-ativo {
+        background-color: var(--verde-claro);
+        color: var(--branco);
+    }
+
+    .modo-admin {
+        margin-top: 20px;
+    }
+
+    main,
+    footer {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    main {
+        padding: 32px 22px 55px;
+    }
+
+    .topo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .acoes-topo {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .acoes-topo input,
+    .acoes-topo select {
+        width: 100%;
+        grid-column: span 2;
+    }
+
+    .acoes-topo button {
+        width: 100%;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .campo-full {
+        grid-column: span 1;
+    }
+
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 26px;
+        padding: 38px 24px 28px;
+    }
+
+    .rodape div {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 426px) {
+    main {
+        padding: 28px 16px 48px;
+    }
+
+    .topo h1 {
+        font-size: 24px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .acoes-topo {
+        grid-template-columns: 1fr;
+    }
+
+    .acoes-topo input,
+    .acoes-topo select {
+        grid-column: span 1;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card,
+    .form-card {
+        padding: 18px 16px;
+    }
+
+    .form-acoes {
+        flex-direction: column;
+    }
+
+    .btn-cinza,
+    .btn-verde {
+        width: 100%;
+        text-align: center;
+    }
+
+    .auth-card {
+        padding: 30px 22px;
+    }
+
+    .rodape {
+        padding: 34px 18px 24px;
+    }
+}
+
+@media (max-width: 321px) {
+    header nav a {
+        font-size: 9.5px;
+        padding: 6px 7px;
+    }
+
+    main {
+        padding: 24px 10px 40px;
+    }
+
+    .topo h1 {
+        font-size: 22px;
+    }
+
+    .card h2 {
+        font-size: 22px;
+    }
+
+    .auth-card h1 {
+        font-size: 22px;
+    }
+
+    .copy {
+        font-size: 10px;
+    }
+}
+
+/* Ajustes finais de acabamento */
+main { min-height: calc(100vh - 120px); }
+.card, .form-card, .tabela, section { border-radius: 18px; }
+input, select, textarea, button, .btn, .btn-verde { font-family: Montserrat, sans-serif; }
+@media (max-width: 768px) { main { width: 100%; padding: 20px 14px; } .tabela { overflow-x: auto; } }
+
+
+/* Correção do menu lateral do administrador */
+header {
+    overflow-y: auto;
+    padding-top: 28px !important;
+    padding-bottom: 24px !important;
+}
+header img {
+    margin-bottom: 28px !important;
+}
+header nav {
+    gap: 11px !important;
+    width: 100%;
+}
+header nav a {
+    display: block;
+    padding: 6px 8px;
+    border-radius: 10px;
+}
+header nav a:hover,
+header nav .menu-ativo {
+    background: rgba(255, 255, 255, 0.08);
+}
+.modo-admin {
+    margin-top: 18px !important;
+    padding: 8px 12px;
+    border: 1px solid rgba(255,255,255,.20);
+    border-radius: 999px;
+    background: rgba(255,255,255,.08);
+    text-align: center;
+}

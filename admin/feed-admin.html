@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Feed Admin - RiseAPP</title>
+    <link href="../assets/css/feed-admin.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="../assets/css/footer-global.css">
+</head>
+
+<body>
+    <header><img alt="Logo RiseAPP" src="../assets/img/logo.png" />
+        <nav><a href="dashboard-admin.html">Dashboard</a><a href="aluno-admin.html">Alunos</a><a href="treinos-admin.html">Treinos</a><a href="exercicio-admin.html">Exercícios</a><a href="desafios-admin.html">Desafios</a><a class="menu-ativo" href="feed-admin.html">Feed</a><a href="relatorio-admin.html">Relatórios</a><a href="financeiro.html">Financeiro</a><a href="personais.html">Personais</a><a href="matriculas.html">Matrículas</a><a href="config-admin.html">Configurações</a></nav>
+        <p class="modo-admin">Administrador</p>
+    </header>
+    <div class="layout">
+
+        <main class="conteudo-principal">
+            <section class="area-feed">
+                <h1>Feed</h1>
+                <div class="criar-post">
+                    <div class="linha-post">
+                        <img alt="Foto de perfil" src="../assets/img/foto-ana.png" />
+                        <input placeholder="No que você está trabalhando hoje?" type="text" />
+                    </div>
+                    <div class="opcoes-post">
+                        <span>📷 Foto</span>
+                        <span>🎥 Vídeo</span>
+                        <span>📊 Enquete</span>
+                        <span>⭐ Conquista</span>
+                        <button>Publicar</button>
+                    </div>
+                </div>
+                <article class="post">
+                    <div class="topo-post">
+                        <div class="usuario-post">
+                            <img alt="Mariana Silva" src="../assets/img/foto-ana.png" />
+                            <div>
+                                <h3>Mariana Silva</h3>
+                                <p>Há 2h</p>
+                            </div>
+                        </div>
+                        <span class="mais">...</span>
+                    </div>
+                    <p class="texto-post">Treino de costas concluído! 💪</p>
+                    <p class="texto-post">Disciplina é o que te move!</p>
+                    <img alt="Pessoa treinando costas" class="imagem-post" src="../assets/img/mulher-treinando.png" />
+                    <div class="info-post">
+                        <span>❤️ 34</span>
+                        <span>💬 6 comentários</span>
+                    </div>
+                    <div class="acoes-post">
+                        <button>👍 Curtir</button>
+                        <button>💬 Comentar</button>
+                    </div>
+                </article>
+                <article class="post">
+                    <div class="topo-post">
+                        <div class="usuario-post">
+                            <img alt="Lucas Mendes" src="../assets/img/foto-joao.png" />
+                            <div>
+                                <h3>Lucas Mendes</h3>
+                                <p>Há 5h</p>
+                            </div>
+                        </div>
+                        <span class="mais">...</span>
+                    </div>
+                    <p class="texto-post">Superação diária. Cada repetição me aproxima dos meus objetivos! 🔥</p>
+                    <p class="texto-post">Bora que o resultado é consequência.</p>
+                    <div class="duas-imagens">
+                        <img alt="Aluno treinando agachamento" src="../assets/img/homem-treinando1.png" />
+                        <img alt="Aluno fazendo flexão" src="../assets/img/homem-treinando2.png" />
+                    </div>
+                    <div class="info-post">
+                        <span>❤️ 58</span>
+                        <span>💬 9 comentários</span>
+                    </div>
+                    <div class="acoes-post">
+                        <button>👍 Curtir</button>
+                        <button>💬 Comentar</button>
+                    </div>
+                </article>
+            </section>
+            <aside class="area-lateral">
+                <div class="busca">
+                    <input placeholder="Buscar no feed..." type="text" />
+                    <button>Filtros</button>
+                </div>
+                <section class="card">
+                    <div class="titulo-card">
+                        <h2>Em alta no momento 🔥</h2>
+                    </div>
+                    <div class="ranking">
+                        <span class="numero">1</span>
+                        <img alt="Mariana Silva" src="../assets/img/foto-ana.png" />
+                        <div class="info-ranking">
+                            <h3>Mariana Silva</h3>
+                            <p>Treino de pernas concluído!</p>
+                        </div>
+                        <strong>❤️ 34</strong>
+                    </div>
+                    <div class="ranking">
+                        <span class="numero">2</span>
+                        <img alt="Lucas Mendes" src="../assets/img/foto-carlos.png" />
+                        <div class="info-ranking">
+                            <h3>Lucas Mendes</h3>
+                            <p>Superação diária 💪</p>
+                        </div>
+                        <strong>❤️ 58</strong>
+                    </div>
+                    <div class="ranking">
+                        <span class="numero">3</span>
+                        <img alt="João Silva" src="../assets/img/foto-joao.png" />
+                        <div class="info-ranking">
+                            <h3>João Silva</h3>
+                            <p>Foco e disciplina sempre!</p>
+                        </div>
+                        <strong>❤️ 27</strong>
+                    </div>
+                    <div class="ranking">
+                        <span class="numero">4</span>
+                        <img alt="Ana Souza" src="../assets/img/foto-fernanda.png" />
+                        <div class="info-ranking">
+                            <h3>Ana Souza</h3>
+                            <p>Cardio matinal concluído!</p>
+                        </div>
+                        <strong>❤️ 19</strong>
+                    </div>
+                    <a class="link-card" href="#">Ver mais rankings</a>
+                </section>
+                <section class="card">
+                    <div class="titulo-card">
+                        <h2>Desafios em destaque</h2>
+                        <a href="#">Ver todos</a>
+                    </div>
+                    <div class="desafio">
+                        <div class="icone-desafio verde">✓</div>
+                        <div class="info-desafio">
+                            <h3>Desafio 30 dias</h3>
+                            <p>Transforme seu corpo</p>
+                        </div>
+                        <span>45%</span>
+                    </div>
+                    <div class="desafio">
+                        <div class="icone-desafio azul">+</div>
+                        <div class="info-desafio">
+                            <h3>Desafio de 10.000 passos</h3>
+                            <p>Caminhe todos os dias</p>
+                        </div>
+                        <span>62%</span>
+                    </div>
+                    <div class="desafio">
+                        <div class="icone-desafio laranja">🔥</div>
+                        <div class="info-desafio">
+                            <h3>Queime 2.000 kcal</h3>
+                            <p>Meta semanal</p>
+                        </div>
+                        <span>30%</span>
+                    </div>
+                    <div class="desafio">
+                        <div class="icone-desafio roxo">🏃</div>
+                        <div class="info-desafio">
+                            <h3>Desafio de corrida</h3>
+                            <p>Complete 5 km na semana</p>
+                        </div>
+                        <span>55%</span>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="titulo-card">
+                        <h2>Pessoas que você pode seguir</h2>
+                        <a href="#">Ver todos</a>
+                    </div>
+                    <div class="pessoa">
+                        <img alt="Fernanda Rocha" src="../assets/img/foto-fernanda.png" />
+                        <div class="info-pessoa">
+                            <h3>Fernanda Rocha</h3>
+                            <p>Personal Trainer</p>
+                        </div>
+                        <button>Seguir</button>
+                    </div>
+                    <div class="pessoa">
+                        <img alt="Rafael Martins" src="../assets/img/foto-joao.png" />
+                        <div class="info-pessoa">
+                            <h3>Rafael Martins</h3>
+                            <p>Aluno</p>
+                        </div>
+                        <button>Seguir</button>
+                    </div>
+                    <div class="pessoa">
+                        <img alt="Juliana Costa" src="../assets/img/foto-ana.png" />
+                        <div class="info-pessoa">
+                            <h3>Juliana Costa</h3>
+                            <p>Nutricionista</p>
+                        </div>
+                        <button>Seguir</button>
+                    </div>
+                    <a class="link-card" href="#">Ver mais sugestões</a>
+                </section>
+            </aside>
+        </main>
+    </div>
+
+
+    <footer class="rise-footer" id="contato">
+        <div class="rise-footer-conteudo">
+            <div>
+                <img src="../assets/img/logo (2).png" alt="Logo RiseAPP">
+                <p>RiseAPP — gestão inteligente para personal, aluno e academia.</p>
+            </div>
+            <div>
+                <h3>Acesso rápido</h3>
+                <a href="../index.html">Início</a>
+                <a href="../personal/login.html">Aluno</a>
+                <a href="../personal/login-personal.html">Personal</a>
+                <a href="loginadm.html">Admin</a>
+            </div>
+            <div>
+                <h3>Contato</h3>
+                <p>riseapp.com</p>
+                <p>(18) 99523-2423</p>
+            </div>
+        </div>
+        <p class="rise-copy">© 2026 RiseAPP. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

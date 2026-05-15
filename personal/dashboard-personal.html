@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Personal</title>
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" href="../assets/css/footer-global.css">
+</head>
+<body>
+    <header>
+        <img src="../assets/img/logo (2).png" alt="Logo RiseAPP">
+        <nav><a class="menu-ativo" href="dashboard-personal.html">Dashboard</a><a href="alunos-personal.html">Alunos</a><a href="cadastrar-treino.html">Cadastrar Treino</a><a href="cadastrar-exercicio.html">Exercícios</a><a href="agenda-personal.html">Agenda</a><a href="financeiro-personal.html">Financeiro</a><a href="../index.html">Sair</a></nav>
+        <p class="modo-admin">Modo Personal</p>
+    </header>
+    <main>
+        <div class="topo">
+            <div>
+                <h1>Dashboard do Personal</h1>
+                <p>Resumo dos seus alunos, treinos e evolução da semana.</p>
+            </div>
+            <div class="acoes-topo">
+                <a class="btn-verde" href="cadastrar-treino.html">+ Novo treino</a>
+            </div>
+        </div>
+
+        <section class="cards">
+            <div class="card"><h3>Alunos ativos</h3><h2>32</h2><p>+4 novos no mês</p></div>
+            <div class="card"><h3>Treinos cadastrados</h3><h2>18</h2><p>5 modelos prontos</p></div>
+            <div class="card"><h3>Avaliações pendentes</h3><h2>06</h2><p>Atualizar medidas</p></div>
+            <div class="card"><h3>Receita mensal</h3><h2>R$ 4.850</h2><p>Previsão atual</p></div>
+        </section>
+
+        <section class="tabela">
+            <table>
+                <thead><tr><th>Aluno</th><th>Objetivo</th><th>Treino atual</th><th>Status</th><th>Ação</th></tr></thead>
+                <tbody>
+                    <tr><td>Ana Paula</td><td>Hipertrofia</td><td>Treino A/B/C</td><td><span class="status ativo">Ativo</span></td><td><a class="btn-verde" href="cadastrar-treino.html">Editar treino</a></td></tr>
+                    <tr><td>Carlos Lima</td><td>Emagrecimento</td><td>Full Body</td><td><span class="status pendente">Revisar</span></td><td><a class="btn-verde" href="cadastrar-treino.html">Atualizar</a></td></tr>
+                    <tr><td>Fernanda Alves</td><td>Condicionamento</td><td>Resistência</td><td><span class="status ativo">Ativo</span></td><td><a class="btn-verde" href="agenda-personal.html">Agendar</a></td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="rise-footer" id="contato">
+        <div class="rise-footer-conteudo">
+            <div>
+                <img src="../assets/img/logo (2).png" alt="Logo RiseAPP">
+                <p>RiseAPP — gestão inteligente para personal, aluno e academia.</p>
+            </div>
+            <div>
+                <h3>Acesso rápido</h3>
+                <a href="../index.html">Início</a>
+                <a href="login.html">Aluno</a>
+                <a href="login-personal.html">Personal</a>
+                <a href="../admin/loginadm.html">Admin</a>
+            </div>
+            <div>
+                <h3>Contato</h3>
+                <p>riseapp.com</p>
+                <p>(18) 99523-2423</p>
+            </div>
+        </div>
+        <p class="rise-copy">© 2026 RiseAPP. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

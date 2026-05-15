@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personais Admin - RiseAPP</title>
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" href="../assets/css/footer-global.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="../assets/img/logo.png" alt="Logo RiseAPP">
+        <nav><a href="dashboard-admin.html">Dashboard</a><a href="aluno-admin.html">Alunos</a><a href="treinos-admin.html">Treinos</a><a href="exercicio-admin.html">Exercícios</a><a href="desafios-admin.html">Desafios</a><a href="feed-admin.html">Feed</a><a href="relatorio-admin.html">Relatórios</a><a href="financeiro.html">Financeiro</a><a class="menu-ativo" href="personais.html">Personais</a><a href="matriculas.html">Matrículas</a><a href="config-admin.html">Configurações</a></nav>
+        <p class="modo-admin">Administrador</p>
+    </header>
+
+    <main>
+        <div class="topo">
+            <h1>Controle de Personais</h1>
+
+            <div class="acoes-topo">
+                <input type="text" placeholder="Buscar personal...">
+                <button>Novo personal</button>
+            </div>
+        </div>
+
+        <section class="cards">
+            <div class="card">
+                <h3>Personais ativos</h3>
+                <h2>24</h2>
+                <p>Em atendimento</p>
+            </div>
+
+            <div class="card">
+                <h3>Alunos vinculados</h3>
+                <h2>318</h2>
+                <p>Distribuídos por equipe</p>
+            </div>
+
+            <div class="card">
+                <h3>Treinos criados</h3>
+                <h2>145</h2>
+                <p>Este mês</p>
+            </div>
+
+            <div class="card">
+                <h3>Avaliações</h3>
+                <h2>4.8</h2>
+                <p>Média geral</p>
+            </div>
+        </section>
+
+        <section class="tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Personal</th>
+                        <th>Especialidade</th>
+                        <th>Alunos</th>
+                        <th>Status</th>
+                        <th>Avaliação</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Fernanda Rocha</td>
+                        <td>Hipertrofia</td>
+                        <td>42 alunos</td>
+                        <td><span class="status ativo">Ativo</span></td>
+                        <td>4.9 ⭐</td>
+                        <td><button class="mais">...</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Carlos Almeida</td>
+                        <td>Emagrecimento</td>
+                        <td>36 alunos</td>
+                        <td><span class="status ativo">Ativo</span></td>
+                        <td>4.7 ⭐</td>
+                        <td><button class="mais">...</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ana Souza</td>
+                        <td>Condicionamento</td>
+                        <td>29 alunos</td>
+                        <td><span class="status pendente">Em análise</span></td>
+                        <td>4.6 ⭐</td>
+                        <td><button class="mais">...</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="rise-footer" id="contato">
+        <div class="rise-footer-conteudo">
+            <div>
+                <img src="../assets/img/logo (2).png" alt="Logo RiseAPP">
+                <p>RiseAPP — gestão inteligente para personal, aluno e academia.</p>
+            </div>
+            <div>
+                <h3>Acesso rápido</h3>
+                <a href="../index.html">Início</a>
+                <a href="../personal/login.html">Aluno</a>
+                <a href="../personal/login-personal.html">Personal</a>
+                <a href="loginadm.html">Admin</a>
+            </div>
+            <div>
+                <h3>Contato</h3>
+                <p>riseapp.com</p>
+                <p>(18) 99523-2423</p>
+            </div>
+        </div>
+        <p class="rise-copy">© 2026 RiseAPP. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

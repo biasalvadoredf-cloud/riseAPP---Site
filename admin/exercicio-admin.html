@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <title>Exercícios</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="../assets/css/exercicio-admin.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="../assets/css/footer-global.css">
+</head>
+
+<body>
+    <div class="layout">
+        <header><img alt="Logo RiseAPP" src="../assets/img/logo.png" />
+            <nav><a href="dashboard-admin.html">Dashboard</a><a href="aluno-admin.html">Alunos</a><a href="treinos-admin.html">Treinos</a><a class="menu-ativo" href="exercicio-admin.html">Exercícios</a><a href="desafios-admin.html">Desafios</a><a href="feed-admin.html">Feed</a><a href="relatorio-admin.html">Relatórios</a><a href="financeiro.html">Financeiro</a><a href="personais.html">Personais</a><a href="matriculas.html">Matrículas</a><a href="config-admin.html">Configurações</a></nav>
+            <p class="modo-admin">Administrador</p>
+        </header>
+        <main>
+            <div class="topo">
+                <h1>Exercícios</h1>
+                <div class="acoes-topo">
+                    <input placeholder="Buscar exercício..." type="text" />
+                    <button>Filtros</button>
+                    <button class="novo">+ Novo exercício</button>
+                </div>
+            </div>
+            <section class="cards">
+                <div class="card">
+                    <img src="../assets/img/exercicios.png" alt="exercicios">
+                    <h3>Total de exercícios</h3>
+                    <h2>324</h2>
+                    <p>+16% em relação ao mês anterior</p>
+                </div>
+                <div class="card">
+                    <img src="../assets/img/play.png" alt="Exercícios ativos">
+                    <h3>Exercícios ativos</h3>
+                    <h2>298</h2>
+                    <p>+12% em relação ao mês anterior</p>
+                </div>
+                <div class="card">
+                    <img src="../assets/img/arquivado.png" alt="Exercícios arquivados">
+                    <h3>Exercícios arquivados</h3>
+                    <h2>26</h2>
+                    <p>+4% em relação ao mês anterior</p>
+                </div>
+                <div class="card">
+                    <img src="../assets/img/star.png" alt="Exercícios favoritos">
+                    <h3>Exercícios favoritos</h3>
+                    <h2>58</h2>
+                    <p>+20% em relação ao mês anterior</p>
+                </div>
+            </section>
+            <section class="tabela">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Todos</th>
+                            <th>Ativos</th>
+                            <th>Arquivados</th>
+                            <th>Favoritos</th>
+                            <th>Por grupo muscular</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="aluno-info">
+                                    <img alt="" src="../assets/img/foto-joao.png" />
+                                    Supino Reto
+                                </div>
+                            </td>
+                            <td class="porcentagem">Peito</td>
+                            <td>Barra</td>
+                            <td>Força</td>
+                            <td>
+                                <div class="barra"><span style="width: 78%;"></span></div>
+                                <td>dificuldade</td>
+                            </td>
+                            <td><button class="mais">...</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="aluno-info">
+                                    <img alt="" src="../assets/img/foto-ana.png" />
+                                    Supino Inclinado
+                                </div>
+                            </td>
+                            <td class="porcentagem">Peito</td>
+                            <td>Barra</td>
+                            <td>Força</td>
+                            
+                            <td>
+                                <div class="barra"><span style="width: 65%;"></span></div>
+                                <td>dificuldade</td>
+                            </td>
+                            <td><button class="mais">...</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="aluno-info">
+                                    <img alt="" src="../assets/img/foto-carlos.png" />
+                                    Agachamento livre
+                                </div>
+                            </td>
+                            <td class="porcentagem">Pernas</td>
+                            <td>Barra</td>
+                            <td>Força</td>
+                            <td>
+                                <div class="barra"><span style="width: 88%;"></span>
+                                    <td>dificuldade</td></div>
+                            </td>
+                            <td><button class="mais">...</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="aluno-info">
+                                    <img alt="" src="../assets/img/foto-ana.png" />
+                                    Puxada frente
+                                </div>
+                            </td>
+                            <td class="porcentagem">Costas</td>
+                            <td>Maquina</td>
+                            <td>Força</td>
+                            <td>
+                                <div class="barra"><span style="width: 60%;"></span>
+                                <td>dificuldade</td></div>
+                            </td>
+                            <td><button class="mais">...</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="aluno-info">
+                                    <img alt="" src="../assets/img/foto-carlos.png" />
+                                    Remada Sentada
+                                </div>
+                            </td>
+                            <td class="porcentagem">Costas</td>
+                            <td>Maquina</td>
+                            <td>Força</td>
+                            <td>
+                                <div class="barra"><span style="width: 55%;"></span>
+                                <td>dificuldade</td></div>
+                            </td>
+                            <td><button class="mais">...</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="aluno-info">
+                                    <img alt="" src="../assets/img/foto-fernanda.png" />
+                                    Rosca Direta
+                                </div>
+                            </td>
+                            <td class="porcentagem">Bíceps</td>
+                            <td>Halter</td>
+                            <td>Isolamento</td>
+                            <td>
+                                <div class="barra"><span style="width: 78%;"></span>
+                                <td>dificuldade</td>    </div>
+                            </td>
+                            <td><button class="mais">...</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="aluno-info">
+                                    <img alt="" src="../assets/img/foto-joao.png" />
+                                    Tríceps na polia
+                                </div>
+                            </td>
+                            <td class="porcentagem">Tríceps</td>
+                            <td>Corda</td>
+                            <td>Isolamento</td>
+                            <td>
+                                <div class="barra"><span style="width: 90%;"></span>
+                                <td>dificuldade</td></div>
+                            </td>
+                            <td><button class="mais">...</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="paginacao">
+                    <span>&lt;</span>
+                    <span class="ativo">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>...</span>
+                    <span>&gt;</span>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <footer class="rise-footer" id="contato">
+        <div class="rise-footer-conteudo">
+            <div>
+                <img src="../assets/img/logo (2).png" alt="Logo RiseAPP">
+                <p>RiseAPP — gestão inteligente para personal, aluno e academia.</p>
+            </div>
+            <div>
+                <h3>Acesso rápido</h3>
+                <a href="../index.html">Início</a>
+                <a href="../personal/login.html">Aluno</a>
+                <a href="../personal/login-personal.html">Personal</a>
+                <a href="loginadm.html">Admin</a>
+            </div>
+            <div>
+                <h3>Contato</h3>
+                <p>riseapp.com</p>
+                <p>(18) 99523-2423</p>
+            </div>
+        </div>
+        <p class="rise-copy">© 2026 RiseAPP. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,1026 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+}
+
+:root {
+    --verde: #135E4B;
+    --verde-claro: #0b8a4b;
+    --branco: #ffffff;
+    --borda: #e6e6e6;
+    --texto: #1f2933;
+    --cinza: #f8f9fa;
+    --rodape: #115544;
+    --copy: #1B4332;
+}
+
+body {
+    background: var(--branco);
+    color: var(--texto);
+    font-family: Montserrat, sans-serif;
+}
+
+.layout {
+    display: flex;
+}
+
+/* MENU LATERAL */
+header {
+    width: 230px;
+    min-height: 100vh;
+    background-color: #135E4B;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 55px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+header img {
+    width: 105px;
+    max-width: 105px;
+    margin-bottom: 70px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    text-align: center;
+}
+
+header nav a {
+    color: var(--branco);
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+header nav a:hover,
+header nav .menu-ativo {
+    color: #55B96E;
+}
+
+.modo-admin {
+    color: var(--branco);
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-top: auto;
+    padding-bottom: 30px;
+}
+
+/* MAIN */
+main {
+    margin-left: 230px;
+    flex: 1;
+    padding: 55px 55px;
+}
+
+/* TOPO */
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.topo h1 {
+    font-size: 28px;
+}
+
+.acoes-topo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.acoes-topo input {
+    width: 240px;
+    padding: 10px 16px;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.acoes-topo button {
+    padding: 10px 16px;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    background: var(--branco);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.acoes-topo .novo {
+    background: var(--verde-claro);
+    color: white;
+    border: none;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.card {
+    border: 1px solid var(--borda);
+    border-radius: 14px;
+    padding: 22px;
+}
+
+.card h3 {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.card h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: var(--verde-claro);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* ABAS DE FILTRO */
+.abas-filtro {
+    display: flex;
+    gap: 4px;
+    border-bottom: 1px solid var(--borda);
+    margin-bottom: 20px;
+}
+
+.abas-filtro a {
+    color: #888;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 6px 6px 0 0;
+}
+
+.abas-filtro a:hover {
+    color: var(--texto);
+}
+
+.abas-filtro .aba-ativa {
+    color: var(--verde-claro);
+    border-bottom: 2px solid var(--verde-claro);
+}
+
+/* TABELA */
+.tabela {
+    border: 1px solid var(--borda);
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 16px 18px;
+    text-align: left;
+    font-size: 13px;
+    border-bottom: 1px solid var(--borda);
+}
+
+th {
+    font-weight: 700;
+    font-size: 13px;
+    color: #444;
+}
+
+/* TREINO INFO */
+.treino-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.treino-thumb {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #e5e7eb;
+    flex-shrink: 0;
+}
+
+.treino-nome {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--texto);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* BADGE DE STATUS NA LINHA */
+.badge {
+    padding: 3px 9px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.badge.ativo {
+    background-color: #e6f4ed;
+    color: var(--verde-claro);
+}
+
+.badge.modelo {
+    background-color: #e8f4ff;
+    color: #2979c7;
+}
+
+/* TAGS DE OBJETIVO */
+.tag {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.tag.hipertrofia {
+    background-color: #fdecea;
+    color: #d32f2f;
+}
+
+.tag.definicao {
+    background-color: #e8f4ff;
+    color: #2979c7;
+}
+
+.tag.condicionamento {
+    background-color: #fff3e0;
+    color: #e67e00;
+}
+
+.tag.mobilidade {
+    background-color: #f3e5f5;
+    color: #7b1fa2;
+}
+
+/* FOTOS DE ALUNOS */
+.alunos-fotos {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.foto-mini {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #e5e7eb;
+    border: 2px solid var(--branco);
+    margin-left: -6px;
+    flex-shrink: 0;
+}
+
+.foto-mini:first-child {
+    margin-left: 0;
+}
+
+.mais-alunos {
+    font-size: 11px;
+    font-weight: 700;
+    color: #555;
+    margin-left: 4px;
+}
+
+/* BOTÃO AÇÕES */
+.mais {
+    padding: 6px 12px;
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* PAGINAÇÃO */
+.paginacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.paginacao span {
+    padding: 7px 12px;
+    border-radius: 7px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.paginacao .ativo {
+    background: var(--verde-claro);
+    color: white;
+}
+
+.itens-pagina {
+    margin-left: auto;
+    font-size: 12px;
+    color: #888;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    margin-left: 230px;
+    background-color: var(--rodape);
+    color: var(--branco);
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 45px 70px 35px;
+}
+
+.rodape div {
+    width: 260px;
+}
+
+.rodape img {
+    width: 140px;
+    margin-bottom: 22px;
+}
+
+.rodape h3 {
+    margin-bottom: 18px;
+}
+
+.rodape p {
+    line-height: 1.5em;
+    font-size: 0.9em;
+}
+
+.copy {
+    text-align: center;
+    padding: 18px;
+    background-color: #1B4332;
+    font-size: 0.9em;
+}
+
+/* ============================= */
+/* RESPONSIVO 1441PX */
+/* ============================= */
+@media (max-width: 1441px) {
+
+    main {
+        padding: 42px 38px;
+    }
+
+    .topo h1 {
+        font-size: 26px;
+    }
+
+    .cards {
+        gap: 16px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    th,
+    td {
+        padding: 15px 14px;
+    }
+
+    .rodape {
+        padding: 42px 60px 32px;
+    }
+}
+
+
+/* ============================= */
+/* RESPONSIVO 1025PX */
+/* ============================= */
+@media (max-width: 1025px) {
+
+    header {
+        width: 210px;
+    }
+
+    main,
+    footer {
+        margin-left: 210px;
+    }
+
+    main {
+        padding: 36px 28px;
+    }
+
+    header img {
+        width: 95px;
+        margin-bottom: 55px;
+    }
+
+    header nav {
+        gap: 18px;
+    }
+
+    header nav a {
+        font-size: 13px;
+    }
+
+    .topo {
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .topo h1 {
+        font-size: 24px;
+    }
+
+    .acoes-topo {
+        gap: 10px;
+    }
+
+    .acoes-topo input {
+        width: 210px;
+    }
+
+    .acoes-topo input,
+    .acoes-topo button {
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .card h2 {
+        font-size: 26px;
+    }
+
+    .tabela {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 850px;
+    }
+
+    th,
+    td {
+        padding: 14px 12px;
+        font-size: 12px;
+    }
+
+    .rodape {
+        padding: 38px 35px 28px;
+        gap: 28px;
+    }
+
+    .rodape div {
+        width: 220px;
+    }
+}
+
+
+/* ============================= */
+/* RESPONSIVO 768PX */
+/* ============================= */
+@media (max-width: 768px) {
+
+    body {
+        background-color: var(--branco);
+    }
+
+    .layout {
+        display: block;
+    }
+
+    header {
+        position: static;
+        width: 100%;
+        min-height: auto;
+        padding: 22px 18px;
+    }
+
+    header img {
+        width: 90px;
+        margin-bottom: 24px;
+    }
+
+    header nav {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    header nav a {
+        font-size: 12px;
+        padding: 7px 10px;
+        border-radius: 20px;
+    }
+
+    header nav a:hover,
+    header nav .menu-ativo {
+        background-color: #55B96E;
+        color: #ffffff;
+    }
+
+    main,
+    footer {
+        margin-left: 0;
+    }
+
+    main {
+        padding: 30px 22px;
+    }
+
+    .topo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        margin-bottom: 24px;
+    }
+
+    .topo h1 {
+        font-size: 24px;
+    }
+
+    .acoes-topo {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .acoes-topo input {
+        width: 100%;
+        grid-column: span 2;
+    }
+
+    .acoes-topo input,
+    .acoes-topo button {
+        width: 100%;
+        padding: 10px 12px;
+        font-size: 13px;
+        border-radius: 10px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .card {
+        padding: 18px;
+        border-radius: 14px;
+    }
+
+    .card h3 {
+        font-size: 12px;
+    }
+
+    .card h2 {
+        font-size: 24px;
+    }
+
+    .card p {
+        font-size: 11px;
+        line-height: 1.4;
+    }
+
+    .abas-filtro {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        gap: 8px;
+        padding-bottom: 6px;
+        margin-bottom: 18px;
+    }
+
+    .abas-filtro a {
+        white-space: nowrap;
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .tabela {
+        width: 100%;
+        overflow-x: auto;
+        border-radius: 14px;
+    }
+
+    table {
+        min-width: 850px;
+    }
+
+    th,
+    td {
+        padding: 14px 12px;
+        font-size: 12px;
+    }
+
+    .paginacao {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        padding: 18px 12px;
+    }
+
+    .itens-pagina {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 26px;
+        padding: 38px 24px 28px;
+    }
+
+    .rodape div {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .rodape img {
+        width: 110px;
+        margin-bottom: 16px;
+    }
+
+    .copy {
+        font-size: 12px;
+        padding: 14px;
+    }
+}
+
+
+/* ============================= */
+/* RESPONSIVO 426PX */
+/* ============================= */
+@media (max-width: 426px) {
+
+    header {
+        padding: 20px 12px;
+    }
+
+    header img {
+        width: 82px;
+        margin-bottom: 20px;
+    }
+
+    header nav {
+        gap: 8px;
+    }
+
+    header nav a {
+        font-size: 11px;
+        padding: 7px 9px;
+    }
+
+    main {
+        padding: 26px 16px;
+    }
+
+    .topo h1 {
+        font-size: 24px;
+        margin-bottom: 4px;
+    }
+
+    .acoes-topo {
+        grid-template-columns: 1fr;
+    }
+
+    .acoes-topo input {
+        grid-column: span 1;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .card {
+        padding: 18px 16px;
+    }
+
+    .card h2 {
+        font-size: 24px;
+    }
+
+    .abas-filtro a {
+        font-size: 12px;
+        padding: 8px 11px;
+    }
+
+    .tabela {
+        border-radius: 12px;
+    }
+
+    table {
+        min-width: 780px;
+    }
+
+    th,
+    td {
+        padding: 13px 10px;
+        font-size: 11px;
+    }
+
+    .treino-thumb {
+        width: 34px;
+        height: 34px;
+    }
+
+    .treino-nome {
+        font-size: 12px;
+    }
+
+    .badge,
+    .tag {
+        font-size: 10px;
+        padding: 3px 8px;
+    }
+
+    .foto-mini {
+        width: 24px;
+        height: 24px;
+    }
+
+    .paginacao span {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .rodape {
+        padding: 34px 18px 24px;
+        gap: 24px;
+    }
+
+    .rodape img {
+        width: 105px;
+    }
+
+    .rodape h3 {
+        font-size: 15px;
+    }
+
+    .rodape p,
+    .rodape a {
+        font-size: 12px;
+    }
+}
+
+
+/* ============================= */
+/* RESPONSIVO 376PX */
+/* ============================= */
+@media (max-width: 376px) {
+
+    header {
+        padding: 18px 10px;
+    }
+
+    header img {
+        width: 78px;
+        margin-bottom: 18px;
+    }
+
+    header nav {
+        gap: 7px;
+    }
+
+    header nav a {
+        font-size: 10.5px;
+        padding: 6px 8px;
+    }
+
+    main {
+        padding: 24px 13px;
+    }
+
+    .topo h1 {
+        font-size: 23px;
+    }
+
+    .acoes-topo input,
+    .acoes-topo button {
+        font-size: 12px;
+        padding: 9px 10px;
+    }
+
+    .card {
+        padding: 16px 14px;
+    }
+
+    .card h3 {
+        font-size: 11px;
+    }
+
+    .card h2 {
+        font-size: 22px;
+    }
+
+    .card p {
+        font-size: 10.5px;
+    }
+
+    .abas-filtro a {
+        font-size: 11px;
+        padding: 7px 10px;
+    }
+
+    table {
+        min-width: 740px;
+    }
+
+    th,
+    td {
+        padding: 12px 9px;
+        font-size: 10.5px;
+    }
+
+    .paginacao {
+        gap: 6px;
+    }
+
+    .paginacao span {
+        padding: 6px 9px;
+        font-size: 11px;
+    }
+
+    .rodape {
+        padding: 32px 15px 22px;
+    }
+
+    .copy {
+        font-size: 11px;
+    }
+}
+
+
+/* ============================= */
+/* RESPONSIVO 321PX */
+/* ============================= */
+@media (max-width: 321px) {
+
+    header {
+        padding: 16px 8px;
+    }
+
+    header img {
+        width: 72px;
+        margin-bottom: 16px;
+    }
+
+    header nav {
+        gap: 6px;
+    }
+
+    header nav a {
+        font-size: 9.5px;
+        padding: 6px 7px;
+    }
+
+    main {
+        padding: 22px 10px;
+    }
+
+    .topo h1 {
+        font-size: 22px;
+    }
+
+    .acoes-topo input,
+    .acoes-topo button {
+        font-size: 11px;
+        padding: 8px;
+        border-radius: 8px;
+    }
+
+    .card {
+        padding: 15px 12px;
+        border-radius: 12px;
+    }
+
+    .card h3 {
+        font-size: 10.5px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 10px;
+    }
+
+    .abas-filtro a {
+        font-size: 10px;
+        padding: 7px 9px;
+    }
+
+    table {
+        min-width: 700px;
+    }
+
+    th,
+    td {
+        padding: 11px 8px;
+        font-size: 10px;
+    }
+
+    .treino-thumb {
+        width: 30px;
+        height: 30px;
+    }
+
+    .foto-mini {
+        width: 22px;
+        height: 22px;
+    }
+
+    .mais {
+        padding: 5px 9px;
+        font-size: 14px;
+    }
+
+    .rodape {
+        padding: 28px 12px 20px;
+        gap: 20px;
+    }
+
+    .rodape img {
+        width: 90px;
+    }
+
+    .rodape h3 {
+        font-size: 14px;
+    }
+
+    .rodape p,
+    .rodape a {
+        font-size: 11px;
+    }
+
+    .copy {
+        font-size: 10px;
+        padding: 12px;
+    }
+}
+
+/* Correção do menu lateral do administrador */
+header {
+    overflow-y: auto;
+    padding-top: 28px !important;
+    padding-bottom: 24px !important;
+}
+header img {
+    margin-bottom: 28px !important;
+}
+header nav {
+    gap: 11px !important;
+    width: 100%;
+}
+header nav a {
+    display: block;
+    padding: 6px 8px;
+    border-radius: 10px;
+}
+header nav a:hover,
+header nav .menu-ativo {
+    background: rgba(255, 255, 255, 0.08);
+}
+.modo-admin {
+    margin-top: 18px !important;
+    padding: 8px 12px;
+    border: 1px solid rgba(255,255,255,.20);
+    border-radius: 999px;
+    background: rgba(255,255,255,.08);
+    text-align: center;
+}

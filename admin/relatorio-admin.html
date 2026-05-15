@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Relatórios</title>
+    <link href="../assets/css/estilizar4.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="../assets/css/footer-global.css">
+</head>
+
+<body>
+    <header><img alt="Logo RiseAPP" src="../assets/img/logo.png" />
+        <nav><a href="dashboard-admin.html">Dashboard</a><a href="aluno-admin.html">Alunos</a><a href="treinos-admin.html">Treinos</a><a href="exercicio-admin.html">Exercícios</a><a href="desafios-admin.html">Desafios</a><a href="feed-admin.html">Feed</a><a class="menu-ativo" href="relatorio-admin.html">Relatórios</a><a href="financeiro.html">Financeiro</a><a href="personais.html">Personais</a><a href="matriculas.html">Matrículas</a><a href="config-admin.html">Configurações</a></nav>
+        <p class="modo-admin">Administrador</p>
+    </header>
+    <main class="caixa">
+
+        <section class="conteudo">
+            <div class="topo-pagina">
+                <h1>Relatórios</h1>
+                <div class="topo-acoes">
+                    <span class="filtro-data">📅 01/04/2024 - 30/04/2024</span>
+                    <button class="btn-filtro">Filtros</button>
+                    <button class="btn-exportar">⬆ Exportar</button>
+                </div>
+            </div>
+            <!-- CARDS DE RESUMO -->
+            <div class="cards-resumo">
+                <div class="card-resumo">
+                    <p class="resumo-label">Alunos ativos</p>
+                    <p class="resumo-valor">128</p>
+                    <p class="resumo-variacao positivo">+12% em relação ao período anterior</p>
+                </div>
+                <div class="card-resumo">
+                    <p class="resumo-label">Treinos concluídos</p>
+                    <p class="resumo-valor">342</p>
+                    <p class="resumo-variacao positivo">+18% em relação ao período anterior</p>
+                </div>
+                <div class="card-resumo">
+                    <p class="resumo-label">Exercícios realizados</p>
+                    <p class="resumo-valor">2.854</p>
+                    <p class="resumo-variacao positivo">+15% em relação ao período anterior</p>
+                </div>
+                <div class="card-resumo">
+                    <p class="resumo-label">Calorias queimadas</p>
+                    <p class="resumo-valor">45.689 kcal</p>
+                    <p class="resumo-variacao positivo">+20% em relação ao período anterior</p>
+                </div>
+            </div>
+            <!-- GRÁFICOS -->
+            <div class="graficos-linha">
+                <div class="card-grafico grande">
+                    <div class="grafico-topo">
+                        <p class="card-titulo">Evolução ao longo do tempo</p>
+                        <span class="tag-diario">Diário</span>
+                    </div>
+                    <div class="legenda-grafico">
+                        <span class="legenda-item azul">● Alunos ativos</span>
+                        <span class="legenda-item verde">● Treinos concluídos</span>
+                        <span class="legenda-item roxo">● Exercícios realizados</span>
+                    </div>
+                    <div class="grafico-placeholder"></div>
+                </div>
+                <div class="card-grafico pequeno">
+                    <p class="card-titulo">Alunos por objetivo</p>
+                    <div class="grafico-placeholder redondo"></div>
+                    <div class="legenda-lista">
+                        <div class="legenda-row"><span class="bolinha verde"></span>
+                            <p>Emagrecimento</p>
+                            <p>38% (49)</p>
+                        </div>
+                        <div class="legenda-row"><span class="bolinha azul"></span>
+                            <p>Hipertrofia</p>
+                            <p>32% (41)</p>
+                        </div>
+                        <div class="legenda-row"><span class="bolinha laranja"></span>
+                            <p>Condicionamento</p>
+                            <p>18% (23)</p>
+                        </div>
+                        <div class="legenda-row"><span class="bolinha amarelo"></span>
+                            <p>Definição</p>
+                            <p>7% (9)</p>
+                        </div>
+                        <div class="legenda-row"><span class="bolinha cinza"></span>
+                            <p>Outros</p>
+                            <p>5% (6)</p>
+                        </div>
+                    </div>
+                    <p class="total-label">Total: 128 alunos</p>
+                </div>
+            </div>
+            <!-- SEGUNDA LINHA DE GRÁFICOS -->
+            <div class="graficos-linha">
+                <div class="card-grafico medio">
+                    <p class="card-titulo">Participação em treinos</p>
+                    <div class="participacao-conteudo">
+                        <div class="circulo-participacao">
+                            <p class="circulo-pct">78%</p>
+                            <p class="circulo-label">Média de participação</p>
+                        </div>
+                        <div class="participacao-lista">
+                            <p class="part-item verde-texto"><strong>100</strong> Alunos frequentes (≥ 75% de
+                                participação)</p>
+                            <p class="part-item amarelo-texto"><strong>28</strong> Alunos irregulares (25% - 74% de
+                                participação)</p>
+                            <p class="part-item vermelho-texto"><strong>12</strong> Alunos com baixa frequência (&lt;
+                                25% de participação)</p>
+                        </div>
+                    </div>
+                    <p class="total-label">Total: 128 alunos</p>
+                </div>
+                <div class="card-grafico medio">
+                    <p class="card-titulo">Top 5 exercícios mais realizados</p>
+                    <div class="exercicio-lista">
+                        <div class="exercicio-item">
+                            <p>1 Agachamento livre</p>
+                            <div class="barra-fundo">
+                                <div class="barra-valor" style="width: 95%"></div>
+                            </div>
+                            <p>942</p>
+                        </div>
+                        <div class="exercicio-item">
+                            <p>2 Supino reto</p>
+                            <div class="barra-fundo">
+                                <div class="barra-valor" style="width: 78%"></div>
+                            </div>
+                            <p>754</p>
+                        </div>
+                        <div class="exercicio-item">
+                            <p>3 Puxada frente</p>
+                            <div class="barra-fundo">
+                                <div class="barra-valor" style="width: 71%"></div>
+                            </div>
+                            <p>689</p>
+                        </div>
+                        <div class="exercicio-item">
+                            <p>4 Desenvolvimento militar</p>
+                            <div class="barra-fundo">
+                                <div class="barra-valor" style="width: 64%"></div>
+                            </div>
+                            <p>612</p>
+                        </div>
+                        <div class="exercicio-item">
+                            <p>5 Remada curvada</p>
+                            <div class="barra-fundo">
+                                <div class="barra-valor" style="width: 57%"></div>
+                            </div>
+                            <p>598</p>
+                        </div>
+                    </div>
+                    <p class="total-label">Total de execuções: 3.497</p>
+                </div>
+                <div class="card-grafico medio">
+                    <p class="card-titulo">Desempenho por grupo muscular</p>
+                    <div class="muscular-lista">
+                        <div class="muscular-item">
+                            <p>Peito</p>
+                            <p class="pct-verde">78%</p>
+                        </div>
+                        <div class="muscular-item">
+                            <p>Costas</p>
+                            <p class="pct-verde">72%</p>
+                        </div>
+                        <div class="muscular-item">
+                            <p>Pernas</p>
+                            <p class="pct-verde">81%</p>
+                        </div>
+                        <div class="muscular-item">
+                            <p>Ombros</p>
+                            <p class="pct-amarelo">65%</p>
+                        </div>
+                        <div class="muscular-item">
+                            <p>Bíceps</p>
+                            <p class="pct-amarelo">70%</p>
+                        </div>
+                        <div class="muscular-item">
+                            <p>Tríceps</p>
+                            <p class="pct-vermelho">68%</p>
+                        </div>
+                        <div class="muscular-item">
+                            <p>Abdômen</p>
+                            <p class="pct-amarelo">75%</p>
+                        </div>
+                    </div>
+                    <p class="total-label">Percentual médio de evolução</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- NAVBAR INFERIOR (só aparece no mobile) -->
+
+
+    <footer class="rise-footer" id="contato">
+        <div class="rise-footer-conteudo">
+            <div>
+                <img src="../assets/img/logo (2).png" alt="Logo RiseAPP">
+                <p>RiseAPP — gestão inteligente para personal, aluno e academia.</p>
+            </div>
+            <div>
+                <h3>Acesso rápido</h3>
+                <a href="../index.html">Início</a>
+                <a href="../personal/login.html">Aluno</a>
+                <a href="../personal/login-personal.html">Personal</a>
+                <a href="loginadm.html">Admin</a>
+            </div>
+            <div>
+                <h3>Contato</h3>
+                <p>riseapp.com</p>
+                <p>(18) 99523-2423</p>
+            </div>
+        </div>
+        <p class="rise-copy">© 2026 RiseAPP. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

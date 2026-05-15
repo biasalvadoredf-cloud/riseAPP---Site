@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="pt-br">
+<head>
+    <title>Cadastro Personal - RiseAPP</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="../assets/css/cadastro.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/footer-global.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');</style>
+</head>
+<body class="auth-body">
+    <div class="conteudo">
+        <h1>Criar conta Personal</h1>
+        <p>Cadastre sua conta para gerenciar alunos, treinos, exercícios e agenda.</p>
+        <form action="dashboard-personal.html">
+            <label for="nome">Nome completo</label>
+            <input id="nome" name="nome" required type="text" />
+            <label for="cref">CREF</label>
+            <input id="cref" name="cref" required type="text" placeholder="Ex: 000000-G/SP" />
+            <label for="email">E-mail</label>
+            <input id="email" name="email" required type="email" />
+            <label for="senha">Senha</label>
+            <input id="senha" name="senha" required type="password" />
+            <label for="especialidade">Especialidade</label>
+            <input id="especialidade" name="especialidade" required type="text" placeholder="Ex: musculação, corrida, funcional" />
+            <button type="submit">Criar conta</button>
+            <div class="criar-conta">
+                <h5>Já tem uma conta?</h5>
+                <a href="login-personal.html"><h5 class="texto-criar">Entrar</h5></a>
+            </div>
+        </form>
+    </div>
+
+    <footer class="rise-footer" id="contato">
+        <div class="rise-footer-conteudo">
+            <div>
+                <img src="../assets/img/logo (2).png" alt="Logo RiseAPP">
+                <p>RiseAPP — gestão inteligente para personal, aluno e academia.</p>
+            </div>
+            <div>
+                <h3>Acesso rápido</h3>
+                <a href="../index.html">Início</a>
+                <a href="login.html">Aluno</a>
+                <a href="login-personal.html">Personal</a>
+                <a href="../admin/loginadm.html">Admin</a>
+            </div>
+            <div>
+                <h3>Contato</h3>
+                <p>riseapp.com</p>
+                <p>(18) 99523-2423</p>
+            </div>
+        </div>
+        <p class="rise-copy">© 2026 RiseAPP. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

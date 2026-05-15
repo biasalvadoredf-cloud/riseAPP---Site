@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+:root {
+    --verde-escuro: #135E4B;
+    --verde-mais-escuro: #174A38;
+    --verde-claro: #50B873;
+    --verde-destaque: #55B96E;
+    --fundo-claro: #d8e7e4;
+    --cinza-escuro: #3d3d43;
+    --texto: #061921;
+    --branco: #ffffff;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    background-color: var(--branco);
+    color: var(--texto);
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--verde-escuro);
+    padding: 10px 55px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 90px;
+}
+
+nav {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+}
+
+nav a {
+    color: var(--branco);
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+/* BOTÕES */
+
+.btn {
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    padding: 15px 35px;
+    border-radius: 30px;
+    display: inline-block;
+    font-weight: 700;
+    transition: all 0.4s;
+}
+
+.btn:hover {
+    background-color: var(--verde-destaque);
+    color: var(--branco);
+}
+
+.btn-branco {
+    background-color: var(--branco);
+    color: var(--texto);
+}
+
+.btn-branco:hover {
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+}
+
+/* BANNER */
+
+.banner {
+    min-height: 625px;
+    background-image: url("../img/banner.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    padding-left: 75px;
+}
+
+.banner div {
+    max-width: 450px;
+}
+
+.banner h1 {
+    color: var(--branco);
+    font-size: 2.1em;
+    line-height: 1.15em;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    color: var(--branco);
+    font-size: 0.95em;
+    line-height: 1.45em;
+    margin-bottom: 28px;
+}
+
+/* PERFIS */
+
+.perfis {
+    background-color: var(--fundo-claro);
+    padding: 65px 80px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 36px;
+
+    border-bottom: 10px solid var(--verde-escuro);
+}
+
+.perfis div {
+    width: 330px;
+    text-align: center;
+    background-color: var(--branco);
+    border-radius: 18px;
+    padding: 30px 24px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}
+
+.perfis h2 {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.perfis p {
+    font-size: 0.95em;
+    line-height: 1.35em;
+    margin-bottom: 28px;
+}
+
+/* PLATAFORMA */
+
+.plataforma {
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 45px 80px 55px;
+}
+
+.plataforma h2 {
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: 1.3em;
+    margin-bottom: 45px;
+}
+
+.plataforma strong {
+    color: var(--verde-destaque);
+}
+
+.recursos {
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+}
+
+.recursos div {
+    width: 220px;
+}
+
+.recursos img {
+    width: 135px;
+    height: 135px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.recursos p {
+    color: var(--branco);
+    font-size: 1em;
+}
+
+/* PLANOS */
+
+.planos {
+    background-color: var(--fundo-claro);
+    text-align: center;
+    padding: 45px 35px 70px;
+}
+
+.planos h2 {
+    color: var(--verde-escuro);
+    font-size: 2em;
+    margin-bottom: 32px;
+}
+
+.cards-planos {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.plano {
+    width: 310px;
+    min-height: 610px;
+    background-color: var(--verde-claro);
+    color: var(--texto);
+    border-radius: 10px;
+    padding: 26px 24px;
+    text-align: left;
+}
+
+.plano-pro {
+    background-color: var(--cinza-escuro);
+    color: var(--branco);
+}
+
+.topo-plano {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.topo-plano p {
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    padding: 7px 12px;
+    border-radius: 8px;
+    font-size: 0.75em;
+    white-space: nowrap;
+}
+
+.plano h3 {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.plano h1 {
+    font-size: 1.8em;
+    margin: 5px 0;
+}
+
+.plano p {
+    font-size: 0.78em;
+    line-height: 1.6em;
+    margin-bottom: 12px;
+}
+
+.plano .preco-antigo {
+    text-decoration: line-through;
+    margin-bottom: 0;
+}
+
+.plano .btn {
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 13px 15px;
+    margin: 18px 0 22px;
+}
+
+.bloqueado {
+    text-decoration: line-through;
+}
+
+/* SOBRE */
+
+.sobre {
+    min-height: 500px;
+    background-image: url("../img/sobre.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: var(--branco);
+    padding: 50px 70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.sobre div:first-child {
+    width: 260px;
+}
+
+.sobre div:last-child {
+    width: 620px;
+    text-align: right;
+    padding-top: 45px;
+}
+
+.sobre h1 {
+    font-size: 3.5em;
+    line-height: 1.15em;
+}
+
+.sobre strong {
+    color: var(--verde-destaque);
+    margin-left: 60px;
+}
+
+.sobre p {
+    font-size: 1.25em;
+    line-height: 1.8em;
+    margin-bottom: 12px;
+}
+
+.sobre .btn {
+    margin-top: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 45px 70px 35px;
+}
+
+.rodape div {
+    width: 260px;
+}
+
+.rodape img {
+    width: 140px;
+    margin-bottom: 22px;
+}
+
+.rodape h3 {
+    font-size: 1.1em;
+    margin-bottom: 18px;
+}
+
+.rodape a {
+    display: block;
+    color: var(--branco);
+    font-size: 0.85em;
+    margin-bottom: 9px;
+}
+
+.rodape p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+
+.copy {
+    background-color: var(--verde-mais-escuro);
+    text-align: center;
+    padding: 18px;
+    font-size: 0.95em;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+    header {
+        padding: 15px 30px;
+    }
+
+    nav {
+        gap: 25px;
+    }
+
+    .perfis {
+        gap: 60px;
+        padding: 55px 35px;
+    }
+
+    .recursos {
+        gap: 60px;
+    }
+
+    .cards-planos {
+        flex-wrap: wrap;
+    }
+
+    .sobre div:last-child {
+        width: 520px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .banner {
+        min-height: 300px;
+        padding: 60px 25px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .perfis {
+        flex-direction: column;
+        align-items: center;
+        gap: 45px;
+    }
+
+    .perfis div {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .recursos {
+        flex-direction: column;
+        align-items: center;
+        gap: 45px;
+    }
+
+    .cards-planos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plano {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .sobre {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 55px 30px;
+    }
+
+    .sobre div:first-child,
+    .sobre div:last-child {
+        width: 100%;
+        max-width: 620px;
+        text-align: center;
+    }
+
+    .sobre div:last-child {
+        padding-top: 25px;
+    }
+
+    .sobre strong {
+        margin-left: 0;
+    }
+
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 35px;
+    }
+}
+
+@media (max-width: 425px) {
+    nav {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .banner h1 {
+        font-size: 1.7em;
+    }
+
+    .banner p {
+        font-size: 0.85em;
+    }
+
+    .plataforma h2 {
+        font-size: 1.4em;
+    }
+
+    .sobre h1 {
+        font-size: 2.8em;
+    }
+
+    .sobre p {
+        font-size: 1em;
+        line-height: 1.6em;
+    }
+
+    .btn {
+        padding: 13px 26px;
+        font-size: 0.9em;
+    }
+}

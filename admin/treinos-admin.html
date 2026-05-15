@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <title>Treinos</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="../assets/css/treinos-admin.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="../assets/css/footer-global.css">
+</head>
+
+<body>
+    <div class="layout">
+        <header>
+            <img alt="Logo RiseAPP" src="../assets/img/logo.png" />
+            <nav><a href="dashboard-admin.html">Dashboard</a><a href="aluno-admin.html">Alunos</a><a class="menu-ativo" href="treinos-admin.html">Treinos</a><a href="exercicio-admin.html">Exercícios</a><a href="desafios-admin.html">Desafios</a><a href="feed-admin.html">Feed</a><a href="relatorio-admin.html">Relatórios</a><a href="financeiro.html">Financeiro</a><a href="personais.html">Personais</a><a href="matriculas.html">Matrículas</a><a href="config-admin.html">Configurações</a></nav>
+            <p class="modo-admin">Administrador</p>
+        </header>
+
+        <main>
+            <div class="topo">
+                <h1>Treinos</h1>
+                <div class="acoes-topo">
+                    <input placeholder="Buscar treino..." type="text" />
+                    <button>🔽 Filtros</button>
+                    <button class="novo">+ Novo treino</button>
+                </div>
+            </div>
+
+            <!-- CARDS DE RESUMO -->
+            <section class="cards">
+                <div class="card">
+                    <h3>Treinos ativos</h3>
+                    <h2>54</h2>
+                    <p>+18% em relação ao mês anterior ›</p>
+                </div>
+                <div class="card">
+                    <h3>Exercícios totais</h3>
+                    <h2>342</h2>
+                    <p>+10% em relação ao mês anterior ›</p>
+                </div>
+                <div class="card">
+                    <h3>Alunos com treinos</h3>
+                    <h2>32</h2>
+                    <p>+8% em relação ao mês anterior ›</p>
+                </div>
+                <div class="card">
+                    <h3>Treinos concluídos</h3>
+                    <h2>1.248</h2>
+                    <p>+10% em relação ao mês anterior ›</p>
+                </div>
+            </section>
+
+            <!-- ABAS DE FILTRO -->
+            <div class="abas-filtro">
+                <a href="#" class="aba-ativa">Todos</a>
+                <a href="#">Meus treinos</a>
+                <a href="#">Modelos</a>
+                <a href="#">Favoritos</a>
+                <a href="#">Arquivados</a>
+            </div>
+
+            <!-- TABELA DE TREINOS -->
+            <section class="tabela">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome do treino</th>
+                            <th>Objetivo</th>
+                            <th>Nº de exercícios</th>
+                            <th>Duração média</th>
+                            <th>Alunos</th>
+                            <th>Criado em</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="treino-info">
+                                    <div class="treino-thumb"></div>
+                                    <div>
+                                        <p class="treino-nome">Peito e Tríceps <span class="badge ativo">Ativo</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="tag hipertrofia">Hipertrofia</span></td>
+                            <td>6 exercícios</td>
+                            <td>~ 50 min</td>
+                            <td>
+                                <div class="alunos-fotos">
+                                    <div class="foto-mini"></div>
+                                    <div class="foto-mini"></div>
+                                    <div class="foto-mini"></div>
+                                    <span class="mais-alunos">+12</span>
+                                </div>
+                            </td>
+                            <td>24 de abr. de 2024</td>
+                            <td><button class="mais">···</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="treino-info">
+                                    <div class="treino-thumb"></div>
+                                    <div>
+                                        <p class="treino-nome">Costas e Bíceps <span class="badge ativo">Ativo</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="tag hipertrofia">Hipertrofia</span></td>
+                            <td>5 exercícios</td>
+                            <td>~ 45 min</td>
+                            <td>
+                                <div class="alunos-fotos">
+                                    <div class="foto-mini"></div>
+                                    <div class="foto-mini"></div>
+                                    <div class="foto-mini"></div>
+                                    <span class="mais-alunos">+8</span>
+                                </div>
+                            </td>
+                            <td>16 de abr. de 2024</td>
+                            <td><button class="mais">···</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="treino-info">
+                                    <div class="treino-thumb"></div>
+                                    <div>
+                                        <p class="treino-nome">Pernas <span class="badge ativo">Ativo</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="tag hipertrofia">Hipertrofia</span></td>
+                            <td>7 exercícios</td>
+                            <td>~ 60 min</td>
+                            <td>
+                                <div class="alunos-fotos">
+                                    <div class="foto-mini"></div>
+                                    <div class="foto-mini"></div>
+                                    <div class="foto-mini"></div>
+                                    <span class="mais-alunos">+19</span>
+                                </div>
+                            </td>
+                            <td>10 de abr. de 2024</td>
+                            <td><button class="mais">···</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="treino-info">
+                                    <div class="treino-thumb"></div>
+                                    <div>
+                                        <p class="treino-nome">Ombros e Abdômen <span class="badge ativo">Ativo</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="tag definicao">Definição</span></td>
+                            <td>6 exercícios</td>
+                            <td>~ 40 min</td>
+                            <td>
+                                <div class="alunos-fotos">
+                                    <div class="foto-mini"></div>
+                                    <div class="foto-mini"></div>
+                                    <div class="foto-mini"></div>
+                                    <span class="mais-alunos">+11</span>
+                                </div>
+                            </td>
+                            <td>05 de abr. de 2024</td>
+                            <td><button class="mais">···</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="treino-info">
+                                    <div class="treino-thumb"></div>
+                                    <div>
+                                        <p class="treino-nome">Full Body <span class="badge ativo">Ativo</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="tag condicionamento">Condicionamento</span></td>
+                            <td>8 exercícios</td>
+                            <td>~ 60 min</td>
+                            <td>
+                                <div class="alunos-fotos">
+                                    <div class="foto-mini"></div>
+                                    <div class="foto-mini"></div>
+                                    <div class="foto-mini"></div>
+                                    <span class="mais-alunos">+20</span>
+                                </div>
+                            </td>
+                            <td>01 de abr. de 2024</td>
+                            <td><button class="mais">···</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="treino-info">
+                                    <div class="treino-thumb"></div>
+                                    <div>
+                                        <p class="treino-nome">HIIT Avançado <span class="badge ativo">Ativo</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="tag condicionamento">Condicionamento</span></td>
+                            <td>10 exercícios</td>
+                            <td>~ 30 min</td>
+                            <td>
+                                <div class="alunos-fotos">
+                                    <div class="foto-mini"></div>
+                                    <div class="foto-mini"></div>
+                                    <div class="foto-mini"></div>
+                                    <span class="mais-alunos">+8</span>
+                                </div>
+                            </td>
+                            <td>26 de mar. de 2024</td>
+                            <td><button class="mais">···</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="treino-info">
+                                    <div class="treino-thumb"></div>
+                                    <div>
+                                        <p class="treino-nome">Mobilidade e Alongamento <span class="badge modelo">Modelo</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="tag mobilidade">Mobilidade</span></td>
+                            <td>12 exercícios</td>
+                            <td>~ 25 min</td>
+                            <td>—</td>
+                            <td>25 de mar. de 2024</td>
+                            <td><button class="mais">···</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="paginacao">
+                    <span>‹</span>
+                    <span class="ativo">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>...</span>
+                    <span>8</span>
+                    <span>›</span>
+                    <span class="itens-pagina">Itens por página: 10 ▾</span>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <footer class="rise-footer" id="contato">
+        <div class="rise-footer-conteudo">
+            <div>
+                <img src="../assets/img/logo (2).png" alt="Logo RiseAPP">
+                <p>RiseAPP — gestão inteligente para personal, aluno e academia.</p>
+            </div>
+            <div>
+                <h3>Acesso rápido</h3>
+                <a href="../index.html">Início</a>
+                <a href="../personal/login.html">Aluno</a>
+                <a href="../personal/login-personal.html">Personal</a>
+                <a href="loginadm.html">Admin</a>
+            </div>
+            <div>
+                <h3>Contato</h3>
+                <p>riseapp.com</p>
+                <p>(18) 99523-2423</p>
+            </div>
+        </div>
+        <p class="rise-copy">© 2026 RiseAPP. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

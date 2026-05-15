@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alunos do Personal</title>
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" href="../assets/css/footer-global.css">
+</head>
+<body>
+    <header>
+        <img src="../assets/img/logo (2).png" alt="Logo RiseAPP">
+        <nav><a href="dashboard-personal.html">Dashboard</a><a class="menu-ativo" href="alunos-personal.html">Alunos</a><a href="cadastrar-treino.html">Cadastrar Treino</a><a href="cadastrar-exercicio.html">Exercícios</a><a href="agenda-personal.html">Agenda</a><a href="financeiro-personal.html">Financeiro</a><a href="../index.html">Sair</a></nav>
+        <p class="modo-admin">Modo Personal</p>
+    </header>
+    <main>
+        <div class="topo">
+            <h1>Controle de Alunos</h1>
+            <div class="acoes-topo">
+                <input type="search" placeholder="Buscar aluno">
+                <button>+ Novo aluno</button>
+            </div>
+        </div>
+        <section class="form-card" style="margin-bottom:24px;max-width:100%;">
+            <h2>Cadastrar aluno</h2><br>
+            <form class="form-grid">
+                <div class="campo"><label>Nome</label><input type="text" placeholder="Nome do aluno"></div>
+                <div class="campo"><label>E-mail</label><input type="email" placeholder="email@exemplo.com"></div>
+                <div class="campo"><label>Telefone</label><input type="tel" placeholder="(18) 99999-9999"></div>
+                <div class="campo"><label>Objetivo</label><select><option>Hipertrofia</option><option>Emagrecimento</option><option>Condicionamento</option><option>Reabilitação</option></select></div>
+                <div class="campo campo-full"><label>Observações</label><textarea placeholder="Restrições, lesões, horários e observações importantes"></textarea></div>
+                <div class="form-acoes campo-full"><button class="btn-cinza" type="reset">Limpar</button><button class="btn-verde" type="button">Salvar aluno</button></div>
+            </form>
+        </section>
+        <section class="tabela"><table><thead><tr><th>Aluno</th><th>Objetivo</th><th>Plano</th><th>Status</th></tr></thead><tbody>
+            <tr><td>Ana Paula</td><td>Hipertrofia</td><td>Mensal</td><td><span class="status ativo">Ativo</span></td></tr>
+            <tr><td>João Pedro</td><td>Emagrecimento</td><td>Trimestral</td><td><span class="status ativo">Ativo</span></td></tr>
+            <tr><td>Marina Costa</td><td>Condicionamento</td><td>Avulso</td><td><span class="status pendente">Pendente</span></td></tr>
+        </tbody></table></section>
+    </main>
+
+    <footer class="rise-footer" id="contato">
+        <div class="rise-footer-conteudo">
+            <div>
+                <img src="../assets/img/logo (2).png" alt="Logo RiseAPP">
+                <p>RiseAPP — gestão inteligente para personal, aluno e academia.</p>
+            </div>
+            <div>
+                <h3>Acesso rápido</h3>
+                <a href="../index.html">Início</a>
+                <a href="login.html">Aluno</a>
+                <a href="login-personal.html">Personal</a>
+                <a href="../admin/loginadm.html">Admin</a>
+            </div>
+            <div>
+                <h3>Contato</h3>
+                <p>riseapp.com</p>
+                <p>(18) 99523-2423</p>
+            </div>
+        </div>
+        <p class="rise-copy">© 2026 RiseAPP. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

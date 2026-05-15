@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+}
+
+:root {
+    --cor-fundo: #135E4B;
+    --verde-mais-escuro: #174A38;
+    --cor-texto: #CADAD7;
+    --cor-texto2: #4CB572;
+    --branco: #FFFFFF;
+    --borda: #EFEFEF;
+    --rodape: #115544;
+    --copy: #1B4332;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #EFEFEF 0%, #F8FBF9 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat, sans-serif;
+}
+
+.conteudo {
+    text-align: center;
+    width: 500px;
+    margin: 45px;
+    background-color: var(--branco);
+    padding: 34px 36px;
+    border-radius: 24px;
+    box-shadow: 0 14px 34px rgba(19, 94, 75, 0.12);
+}
+
+h1 {
+    margin: 20px;
+    color: var(--cor-fundo);
+    font-size: 20px;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+.criar-conta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label {
+    text-align: left;
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+input {
+    margin: 5px 0px;
+    border: var(--cor-texto) 1px solid;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 10px;
+    color: var(--cor-fundo);
+}
+
+button {
+    margin: 14px 0px 10px;
+    background-color: var(--cor-texto2);
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--cor-fundo);
+    font-weight: 800;
+    cursor: pointer;
+}
+
+
+.texto-criar {
+    text-decoration: underline;
+    color: var(--cor-fundo);
+}
+
+
+@media (max-width: 426px) {
+
+    .conteudo {
+        width: 300px;
+    }
+
+}
+
+@media (max-width: 376px){
+    .conteudo {
+        width: 290px;
+    }
+}
+
+
+@media (max-width: 321px) {
+
+    .conteudo {
+        width: 210px;
+    }
+}
+
+

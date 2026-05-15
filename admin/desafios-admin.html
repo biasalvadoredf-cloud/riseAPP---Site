@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <title>Desafios</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="../assets/css/desafios-admin.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="../assets/css/footer-global.css">
+</head>
+
+<body>
+    <div class="layout">
+        <header>
+            <img alt="Logo RiseAPP" src="../assets/img/logo.png" />
+            <nav><a href="dashboard-admin.html">Dashboard</a><a href="aluno-admin.html">Alunos</a><a href="treinos-admin.html">Treinos</a><a href="exercicio-admin.html">Exercícios</a><a class="menu-ativo" href="desafios-admin.html">Desafios</a><a href="feed-admin.html">Feed</a><a href="relatorio-admin.html">Relatórios</a><a href="financeiro.html">Financeiro</a><a href="personais.html">Personais</a><a href="matriculas.html">Matrículas</a><a href="config-admin.html">Configurações</a></nav>
+            <p class="modo-admin">Administrador</p>
+        </header>
+
+        <main>
+            <div class="topo">
+                <h1>Desafios</h1>
+                <div class="acoes-topo">
+                    <input placeholder="Buscar desafio..." type="text" />
+                    <button>🔽 Filtros</button>
+                    <button class="novo">+ Novo desafio</button>
+                </div>
+            </div>
+
+            <!-- CARDS DE RESUMO -->
+            <section class="cards">
+                <div class="card">
+                    <h3>Desafios ativos</h3>
+                    <h2>12</h2>
+                    <p>+10% em relação ao mês anterior ›</p>
+                </div>
+                <div class="card">
+                    <h3>Participações totais</h3>
+                    <h2>1.284</h2>
+                    <p>+19% em relação ao mês anterior ›</p>
+                </div>
+                <div class="card">
+                    <h3>Conclusões</h3>
+                    <h2>456</h2>
+                    <p>+22% em relação ao mês anterior ›</p>
+                </div>
+                <div class="card">
+                    <h3>Taxa de conclusão</h3>
+                    <h2>35,6%</h2>
+                    <p>+4,5 p.p. em relação ao mês anterior ›</p>
+                </div>
+            </section>
+
+            <!-- ABAS DE FILTRO -->
+            <div class="abas-filtro">
+                <a href="#" class="aba-ativa">Todos</a>
+                <a href="#">Ativos</a>
+                <a href="#">Agendados</a>
+                <a href="#">Encerrados</a>
+                <a href="#">Rascunhos</a>
+            </div>
+
+            <!-- TABELA DE DESAFIOS -->
+            <section class="tabela">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Desafio</th>
+                            <th>Tipo</th>
+                            <th>Período</th>
+                            <th>Participantes</th>
+                            <th>Progresso médio</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="desafio-info">
+                                    <div class="desafio-thumb"></div>
+                                    <div>
+                                        <p class="desafio-nome">Desafio 30 dias</p>
+                                        <p class="desafio-desc">Transforme seu corpo em 30 dias.</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="tag individual">Individual</span></td>
+                            <td>
+                                <p>01/06/2024 – 30/06/2024</p>
+                                <p class="dias">30 dias</p>
+                            </td>
+                            <td class="participantes">👥 321</td>
+                            <td>
+                                <div class="barra"><span style="width: 68%;"></span></div>
+                                <p class="pct-barra">68%</p>
+                            </td>
+                            <td><span class="status ativo">Ativo</span></td>
+                            <td><button class="mais">···</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="desafio-info">
+                                    <div class="desafio-thumb"></div>
+                                    <div>
+                                        <p class="desafio-nome">Supere seus limites</p>
+                                        <p class="desafio-desc">Desafio de força e resistência</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="tag individual">Individual</span></td>
+                            <td>
+                                <p>10/06/2024 – 09/06/2024</p>
+                                <p class="dias">30 dias</p>
+                            </td>
+                            <td class="participantes">👥 278</td>
+                            <td>
+                                <div class="barra"><span style="width: 52%;"></span></div>
+                                <p class="pct-barra">52%</p>
+                            </td>
+                            <td><span class="status ativo">Ativo</span></td>
+                            <td><button class="mais">···</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="desafio-info">
+                                    <div class="desafio-thumb"></div>
+                                    <div>
+                                        <p class="desafio-nome">Equipe imbatível</p>
+                                        <p class="desafio-desc">Desafio por equipes</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="tag equipe">Equipe</span></td>
+                            <td>
+                                <p>01/04/2024 – 31/05/2024</p>
+                                <p class="dias">31 dias</p>
+                            </td>
+                            <td class="participantes">👥 12 equipes</td>
+                            <td>
+                                <div class="barra"><span style="width: 75%;"></span></div>
+                                <p class="pct-barra">75%</p>
+                            </td>
+                            <td><span class="status ativo">Ativo</span></td>
+                            <td><button class="mais">···</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="desafio-info">
+                                    <div class="desafio-thumb"></div>
+                                    <div>
+                                        <p class="desafio-nome">Alimentação saudável</p>
+                                        <p class="desafio-desc">Desafio de hábitos saudáveis.</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="tag individual">Individual</span></td>
+                            <td>
+                                <p>15/04/2024 – 15/05/2024</p>
+                                <p class="dias">30 dias</p>
+                            </td>
+                            <td class="participantes">👥 198</td>
+                            <td>
+                                <div class="barra"><span style="width: 100%;"></span></div>
+                                <p class="pct-barra">100%</p>
+                            </td>
+                            <td><span class="status encerrado">Encerrado</span></td>
+                            <td><button class="mais">···</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="desafio-info">
+                                    <div class="desafio-thumb"></div>
+                                    <div>
+                                        <p class="desafio-nome">Desafio 10K</p>
+                                        <p class="desafio-desc">Corra 10km em 30 dias</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="tag individual">Individual</span></td>
+                            <td>
+                                <p>20/04/2024 – 20/05/2024</p>
+                                <p class="dias">30 dias</p>
+                            </td>
+                            <td class="participantes">👥 155</td>
+                            <td>
+                                <div class="barra"><span style="width: 100%;"></span></div>
+                                <p class="pct-barra">100%</p>
+                            </td>
+                            <td><span class="status encerrado">Encerrado</span></td>
+                            <td><button class="mais">···</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="desafio-info">
+                                    <div class="desafio-thumb"></div>
+                                    <div>
+                                        <p class="desafio-nome">Mente saudável</p>
+                                        <p class="desafio-desc">Desafio de bem-estar mental.</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="tag individual">Individual</span></td>
+                            <td>
+                                <p>01/06/2024 – 30/06/2024</p>
+                                <p class="dias">30 dias</p>
+                            </td>
+                            <td class="participantes">👥 98</td>
+                            <td>
+                                <div class="barra"><span style="width: 0%;"></span></div>
+                                <p class="pct-barra">0%</p>
+                            </td>
+                            <td><span class="status agendado">Agendado</span></td>
+                            <td><button class="mais">···</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="desafio-info">
+                                    <div class="desafio-thumb"></div>
+                                    <div>
+                                        <p class="desafio-nome">Hipertrofia total</p>
+                                        <p class="desafio-desc">Desafio de massa muscular</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="tag individual">Individual</span></td>
+                            <td>
+                                <p>01/07/2024 – 31/07/2024</p>
+                                <p class="dias">31 dias</p>
+                            </td>
+                            <td class="participantes">👥 6</td>
+                            <td>
+                                <div class="barra"><span style="width: 0%;"></span></div>
+                                <p class="pct-barra">0%</p>
+                            </td>
+                            <td><span class="status agendado">Agendado</span></td>
+                            <td><button class="mais">···</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="desafio-info">
+                                    <div class="desafio-thumb"></div>
+                                    <div>
+                                        <p class="desafio-nome">Desafio verão</p>
+                                        <p class="desafio-desc">Prepare-se para o verão</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="tag individual">Individual</span></td>
+                            <td>
+                                <p class="dias">Sem data definida</p>
+                            </td>
+                            <td class="participantes">👥 0</td>
+                            <td>
+                                <div class="barra"><span style="width: 0%;"></span></div>
+                                <p class="pct-barra">0%</p>
+                            </td>
+                            <td><span class="status rascunho">Rascunho</span></td>
+                            <td><button class="mais">···</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="paginacao">
+                    <span>‹</span>
+                    <span class="ativo">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>...</span>
+                    <span>5</span>
+                    <span>›</span>
+                    <span class="itens-pagina">Itens por página: 8 ▾</span>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <footer class="rise-footer" id="contato">
+        <div class="rise-footer-conteudo">
+            <div>
+                <img src="../assets/img/logo (2).png" alt="Logo RiseAPP">
+                <p>RiseAPP — gestão inteligente para personal, aluno e academia.</p>
+            </div>
+            <div>
+                <h3>Acesso rápido</h3>
+                <a href="../index.html">Início</a>
+                <a href="../personal/login.html">Aluno</a>
+                <a href="../personal/login-personal.html">Personal</a>
+                <a href="loginadm.html">Admin</a>
+            </div>
+            <div>
+                <h3>Contato</h3>
+                <p>riseapp.com</p>
+                <p>(18) 99523-2423</p>
+            </div>
+        </div>
+        <p class="rise-copy">© 2026 RiseAPP. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Treino</title>
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" href="../assets/css/footer-global.css">
+</head>
+<body>
+    <header>
+        <img src="../assets/img/logo (2).png" alt="Logo RiseAPP">
+        <nav><a href="dashboard-personal.html">Dashboard</a><a href="alunos-personal.html">Alunos</a><a class="menu-ativo" href="cadastrar-treino.html">Cadastrar Treino</a><a href="cadastrar-exercicio.html">Exercícios</a><a href="agenda-personal.html">Agenda</a><a href="financeiro-personal.html">Financeiro</a><a href="../index.html">Sair</a></nav>
+        <p class="modo-admin">Modo Personal</p>
+    </header>
+    <main>
+        <div class="topo">
+            <h1>Cadastrar Treino</h1>
+            <div class="acoes-topo"><a class="btn-verde" href="cadastrar-exercicio.html">+ Novo exercício</a></div>
+        </div>
+        <section class="form-card">
+            <form class="form-grid">
+                <div class="campo"><label>Aluno</label><select><option>Ana Paula</option><option>Carlos Lima</option><option>Fernanda Alves</option></select></div>
+                <div class="campo"><label>Nome do treino</label><input type="text" placeholder="Ex: Peito e Tríceps"></div>
+                <div class="campo"><label>Categoria</label><select><option>Treino A</option><option>Treino B</option><option>Treino C</option><option>Full Body</option></select></div>
+                <div class="campo"><label>Nível</label><select><option>Iniciante</option><option>Intermediário</option><option>Avançado</option></select></div>
+                <div class="campo"><label>Exercício 1</label><input type="text" placeholder="Supino reto"></div>
+                <div class="campo"><label>Séries e repetições</label><input type="text" placeholder="4x10"></div>
+                <div class="campo"><label>Exercício 2</label><input type="text" placeholder="Tríceps corda"></div>
+                <div class="campo"><label>Séries e repetições</label><input type="text" placeholder="3x12"></div>
+                <div class="campo campo-full"><label>Orientações do personal</label><textarea placeholder="Cadência, descanso, carga sugerida e observações técnicas"></textarea></div>
+                <div class="form-acoes campo-full"><button class="btn-cinza" type="reset">Cancelar</button><button class="btn-verde" type="button">Salvar treino</button></div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="rise-footer" id="contato">
+        <div class="rise-footer-conteudo">
+            <div>
+                <img src="../assets/img/logo (2).png" alt="Logo RiseAPP">
+                <p>RiseAPP — gestão inteligente para personal, aluno e academia.</p>
+            </div>
+            <div>
+                <h3>Acesso rápido</h3>
+                <a href="../index.html">Início</a>
+                <a href="login.html">Aluno</a>
+                <a href="login-personal.html">Personal</a>
+                <a href="../admin/loginadm.html">Admin</a>
+            </div>
+            <div>
+                <h3>Contato</h3>
+                <p>riseapp.com</p>
+                <p>(18) 99523-2423</p>
+            </div>
+        </div>
+        <p class="rise-copy">© 2026 RiseAPP. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

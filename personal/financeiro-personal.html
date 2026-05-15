@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financeiro Personal</title>
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" href="../assets/css/footer-global.css">
+</head>
+<body>
+    <header>
+        <img src="../assets/img/logo (2).png" alt="Logo RiseAPP">
+        <nav><a href="dashboard-personal.html">Dashboard</a><a href="alunos-personal.html">Alunos</a><a href="cadastrar-treino.html">Cadastrar Treino</a><a href="cadastrar-exercicio.html">Exercícios</a><a href="agenda-personal.html">Agenda</a><a class="menu-ativo" href="financeiro-personal.html">Financeiro</a><a href="../index.html">Sair</a></nav>
+        <p class="modo-admin">Modo Personal</p>
+    </header>
+    <main>
+        <div class="topo"><h1>Financeiro do Personal</h1><div class="acoes-topo"><button>+ Registrar pagamento</button></div></div>
+        <section class="cards">
+            <div class="card"><h3>Recebido no mês</h3><h2>R$ 4.850</h2><p>Pagamentos confirmados</p></div>
+            <div class="card"><h3>A receber</h3><h2>R$ 1.200</h2><p>4 alunos pendentes</p></div>
+            <div class="card"><h3>Planos ativos</h3><h2>28</h2><p>Mensais e trimestrais</p></div>
+            <div class="card"><h3>Inadimplência</h3><h2>8%</h2><p>Acompanhar cobranças</p></div>
+        </section>
+        <section class="tabela"><table><thead><tr><th>Aluno</th><th>Plano</th><th>Valor</th><th>Vencimento</th><th>Status</th></tr></thead><tbody>
+            <tr><td>Ana Paula</td><td>Mensal</td><td>R$ 180,00</td><td>10/05/2026</td><td><span class="status ativo">Pago</span></td></tr>
+            <tr><td>Carlos Lima</td><td>Trimestral</td><td>R$ 480,00</td><td>15/05/2026</td><td><span class="status pendente">Pendente</span></td></tr>
+            <tr><td>Marina Costa</td><td>Mensal</td><td>R$ 150,00</td><td>20/05/2026</td><td><span class="status pendente">A vencer</span></td></tr>
+        </tbody></table></section>
+    </main>
+
+    <footer class="rise-footer" id="contato">
+        <div class="rise-footer-conteudo">
+            <div>
+                <img src="../assets/img/logo (2).png" alt="Logo RiseAPP">
+                <p>RiseAPP — gestão inteligente para personal, aluno e academia.</p>
+            </div>
+            <div>
+                <h3>Acesso rápido</h3>
+                <a href="../index.html">Início</a>
+                <a href="login.html">Aluno</a>
+                <a href="login-personal.html">Personal</a>
+                <a href="../admin/loginadm.html">Admin</a>
+            </div>
+            <div>
+                <h3>Contato</h3>
+                <p>riseapp.com</p>
+                <p>(18) 99523-2423</p>
+            </div>
+        </div>
+        <p class="rise-copy">© 2026 RiseAPP. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

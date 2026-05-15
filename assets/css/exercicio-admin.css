@@ -1,0 +1,791 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+}
+
+:root {
+    --verde: #135E4B;
+    --verde-claro: #55B96E;
+    --verde-hover: #0b8a4b;
+    --branco: #ffffff;
+    --fundo: #f7f9f8;
+    --borda: #e1e5e3;
+    --texto: #061921;
+    --texto-suave: #6B7280;
+    --card: #ffffff;
+    --rodape: #115544;
+    --copy: #1B4332;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--fundo);
+    color: var(--texto);
+}
+
+.layout {
+    display: flex;
+}
+
+/* MENU LATERAL */
+header {
+    width: 230px;
+    min-height: 100vh;
+    background-color: var(--verde);
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 55px 20px 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+header img {
+    width: 105px;
+    max-width: 105px;
+    margin-bottom: 65px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    text-align: center;
+}
+
+header nav a {
+    color: var(--branco);
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+header nav a:hover,
+header nav .menu-ativo,
+header nav .ativo {
+    color: var(--verde-claro);
+}
+
+.modo-admin {
+    color: var(--branco);
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 35px;
+}
+
+/* MAIN */
+main {
+    width: calc(100% - 230px);
+    min-height: 100vh;
+    margin-left: 230px;
+    padding: 42px 42px 70px;
+    background-color: var(--fundo);
+}
+
+/* TOPO */
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 26px;
+}
+
+.topo h1 {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--texto);
+}
+
+.acoes-topo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.acoes-topo input {
+    width: 250px;
+    padding: 11px 16px;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    font-size: 13px;
+    outline: none;
+    background-color: var(--branco);
+}
+
+.acoes-topo input:focus {
+    border-color: var(--verde);
+}
+
+.acoes-topo button {
+    padding: 11px 16px;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    background-color: var(--branco);
+    color: var(--texto-suave);
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.acoes-topo button:hover {
+    background-color: #f1f5f3;
+}
+
+.acoes-topo .novo {
+    background-color: var(--verde);
+    color: var(--branco);
+    border: none;
+}
+
+.acoes-topo .novo:hover {
+    background-color: var(--verde-hover);
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.card {
+    background-color: var(--card);
+    border: 1px solid var(--borda);
+    border-radius: 18px;
+    padding: 22px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+}
+
+.card img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    font-size: 13px;
+    color: var(--texto-suave);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.card h2 {
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--texto);
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: var(--verde-hover);
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+/* TABELA */
+.tabela {
+    background-color: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 16px 18px;
+    text-align: left;
+    font-size: 13px;
+    border-bottom: 1px solid var(--borda);
+    vertical-align: middle;
+}
+
+th {
+    font-weight: 800;
+    color: #374151;
+    background-color: #fbfcfb;
+}
+
+.aluno-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 800;
+    color: var(--texto);
+}
+
+.aluno-info img {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    object-fit: cover;
+    background-color: #e5e7eb;
+}
+
+.porcentagem {
+    color: var(--verde);
+    font-weight: 800;
+}
+
+/* BARRA */
+.barra {
+    width: 110px;
+    height: 7px;
+    background-color: #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.barra span {
+    display: block;
+    height: 100%;
+    background-color: var(--verde);
+    border-radius: 10px;
+}
+
+/* BOTÃO AÇÕES */
+.mais {
+    padding: 6px 12px;
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    background-color: var(--branco);
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.mais:hover {
+    background-color: #f1f5f3;
+}
+
+/* PAGINAÇÃO */
+.paginacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: #fbfcfb;
+}
+
+.paginacao span {
+    padding: 7px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.paginacao .ativo {
+    background-color: var(--verde);
+    color: var(--branco);
+}
+
+/* FOOTER */
+footer {
+    margin-left: 230px;
+    background-color: var(--rodape);
+    color: var(--branco);
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 42px 60px 32px;
+}
+
+.rodape div {
+    width: 260px;
+}
+
+.rodape img {
+    width: 130px;
+    margin-bottom: 18px;
+}
+
+.rodape h3 {
+    font-size: 17px;
+    margin-bottom: 14px;
+}
+
+.links-rodape {
+    display: block;
+    color: var(--branco);
+    margin-bottom: 9px;
+}
+
+.rodape p,
+.rodape a {
+    color: var(--branco);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.copy {
+    text-align: center;
+    padding: 16px;
+    background-color: var(--copy);
+    font-size: 13px;
+}
+
+/* RESPONSIVO 1441PX */
+@media (max-width: 1441px) {
+    main {
+        padding: 40px 38px 65px;
+    }
+
+    .cards {
+        gap: 16px;
+    }
+
+    th,
+    td {
+        padding: 15px 14px;
+    }
+}
+
+/* RESPONSIVO 1025PX */
+@media (max-width: 1025px) {
+    header {
+        width: 210px;
+    }
+
+    main {
+        width: calc(100% - 210px);
+        margin-left: 210px;
+        padding: 36px 28px 60px;
+    }
+
+    footer {
+        margin-left: 210px;
+    }
+
+    header img {
+        width: 95px;
+        margin-bottom: 55px;
+    }
+
+    header nav {
+        gap: 18px;
+    }
+
+    header nav a {
+        font-size: 13px;
+    }
+
+    .topo {
+        align-items: flex-start;
+    }
+
+    .acoes-topo {
+        gap: 8px;
+    }
+
+    .acoes-topo input {
+        width: 210px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .tabela {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 850px;
+    }
+
+    .rodape {
+        padding: 38px 35px 28px;
+    }
+
+    .rodape div {
+        width: 220px;
+    }
+}
+
+/* RESPONSIVO 768PX */
+@media (max-width: 768px) {
+    .layout {
+        display: block;
+    }
+
+    header {
+        position: static;
+        width: 100%;
+        min-height: auto;
+        padding: 22px 18px;
+    }
+
+    header img {
+        width: 90px;
+        margin-bottom: 24px;
+    }
+
+    header nav {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    header nav a {
+        font-size: 12px;
+        padding: 7px 10px;
+        border-radius: 20px;
+    }
+
+    header nav a:hover,
+    header nav .menu-ativo,
+    header nav .ativo {
+        color: var(--branco);
+        background-color: var(--verde-claro);
+    }
+
+    .modo-admin {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    main {
+        width: 100%;
+        margin-left: 0;
+        padding: 32px 22px 55px;
+    }
+
+    footer {
+        margin-left: 0;
+    }
+
+    .topo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        margin-bottom: 24px;
+    }
+
+    .topo h1 {
+        font-size: 24px;
+    }
+
+    .acoes-topo {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .acoes-topo input {
+        width: 100%;
+        grid-column: span 2;
+    }
+
+    .acoes-topo input,
+    .acoes-topo button {
+        width: 100%;
+        padding: 10px 12px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .tabela {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 820px;
+    }
+
+    .paginacao {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 26px;
+        padding: 38px 24px 28px;
+    }
+
+    .rodape div {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .links-rodape {
+        text-align: center;
+    }
+}
+
+/* RESPONSIVO 426PX */
+@media (max-width: 426px) {
+    header {
+        padding: 20px 12px;
+    }
+
+    header img {
+        width: 82px;
+        margin-bottom: 20px;
+    }
+
+    header nav {
+        gap: 8px;
+    }
+
+    header nav a {
+        font-size: 11px;
+        padding: 7px 9px;
+    }
+
+    main {
+        padding: 28px 16px 48px;
+    }
+
+    .topo h1 {
+        font-size: 24px;
+    }
+
+    .acoes-topo {
+        grid-template-columns: 1fr;
+    }
+
+    .acoes-topo input {
+        grid-column: span 1;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .card {
+        padding: 18px 16px;
+    }
+
+    .card h2 {
+        font-size: 24px;
+    }
+
+    table {
+        min-width: 760px;
+    }
+
+    th,
+    td {
+        padding: 13px 10px;
+        font-size: 11px;
+    }
+
+    .aluno-info img {
+        width: 34px;
+        height: 34px;
+    }
+
+    .barra {
+        width: 85px;
+    }
+
+    .rodape {
+        padding: 34px 18px 24px;
+    }
+
+    .rodape img {
+        width: 105px;
+    }
+
+    .rodape h3 {
+        font-size: 15px;
+    }
+
+    .rodape p,
+    .rodape a {
+        font-size: 12px;
+    }
+}
+
+/* RESPONSIVO 376PX */
+@media (max-width: 376px) {
+    header {
+        padding: 18px 10px;
+    }
+
+    header img {
+        width: 78px;
+        margin-bottom: 18px;
+    }
+
+    header nav {
+        gap: 7px;
+    }
+
+    header nav a {
+        font-size: 10.5px;
+        padding: 6px 8px;
+    }
+
+    main {
+        padding: 26px 13px 44px;
+    }
+
+    .card {
+        padding: 16px 14px;
+    }
+
+    .card h2 {
+        font-size: 22px;
+    }
+
+    table {
+        min-width: 720px;
+    }
+
+    .copy {
+        font-size: 11px;
+    }
+}
+
+/* RESPONSIVO 321PX */
+@media (max-width: 321px) {
+    header {
+        padding: 16px 8px;
+    }
+
+    header img {
+        width: 72px;
+        margin-bottom: 16px;
+    }
+
+    header nav {
+        gap: 6px;
+    }
+
+    header nav a {
+        font-size: 9.5px;
+        padding: 6px 7px;
+    }
+
+    main {
+        padding: 24px 10px 40px;
+    }
+
+    .topo h1 {
+        font-size: 22px;
+    }
+
+    .acoes-topo input,
+    .acoes-topo button {
+        font-size: 11px;
+        padding: 9px;
+    }
+
+    .card {
+        padding: 15px 12px;
+    }
+
+    .card h3 {
+        font-size: 12px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 10px;
+    }
+
+    table {
+        min-width: 700px;
+    }
+
+    .rodape {
+        padding: 28px 12px 20px;
+    }
+
+    .rodape img {
+        width: 90px;
+    }
+
+    .rodape h3 {
+        font-size: 14px;
+    }
+
+    .rodape p,
+    .rodape a {
+        font-size: 11px;
+    }
+
+    .copy {
+        font-size: 10px;
+        padding: 12px;
+    }
+}
+
+/* Correção do menu lateral do administrador */
+header {
+    overflow-y: auto;
+    padding-top: 28px !important;
+    padding-bottom: 24px !important;
+}
+header img {
+    margin-bottom: 28px !important;
+}
+header nav {
+    gap: 11px !important;
+    width: 100%;
+}
+header nav a {
+    display: block;
+    padding: 6px 8px;
+    border-radius: 10px;
+}
+header nav a:hover,
+header nav .menu-ativo {
+    background: rgba(255, 255, 255, 0.08);
+}
+.modo-admin {
+    margin-top: 18px !important;
+    padding: 8px 12px;
+    border: 1px solid rgba(255,255,255,.20);
+    border-radius: 999px;
+    background: rgba(255,255,255,.08);
+    text-align: center;
+}

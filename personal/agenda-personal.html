@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Personal</title>
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" href="../assets/css/footer-global.css">
+</head>
+<body>
+    <header>
+        <img src="../assets/img/logo (2).png" alt="Logo RiseAPP">
+        <nav><a href="dashboard-personal.html">Dashboard</a><a href="alunos-personal.html">Alunos</a><a href="cadastrar-treino.html">Cadastrar Treino</a><a href="cadastrar-exercicio.html">Exercícios</a><a class="menu-ativo" href="agenda-personal.html">Agenda</a><a href="financeiro-personal.html">Financeiro</a><a href="../index.html">Sair</a></nav>
+        <p class="modo-admin">Modo Personal</p>
+    </header>
+    <main>
+        <div class="topo"><h1>Agenda do Personal</h1><div class="acoes-topo"><button>+ Novo horário</button></div></div>
+        <section class="cards">
+            <div class="card"><h3>Aulas hoje</h3><h2>07</h2><p>2 avaliações físicas</p></div>
+            <div class="card"><h3>Horários livres</h3><h2>04</h2><p>Disponível para encaixe</p></div>
+            <div class="card"><h3>Remarcações</h3><h2>02</h2><p>Confirmar com aluno</p></div>
+            <div class="card"><h3>Semana</h3><h2>38</h2><p>Aulas previstas</p></div>
+        </section>
+        <section class="tabela"><table><thead><tr><th>Horário</th><th>Aluno</th><th>Tipo</th><th>Status</th></tr></thead><tbody>
+            <tr><td>07:00</td><td>Ana Paula</td><td>Musculação</td><td><span class="status ativo">Confirmado</span></td></tr>
+            <tr><td>09:30</td><td>Carlos Lima</td><td>Avaliação física</td><td><span class="status pendente">Pendente</span></td></tr>
+            <tr><td>18:00</td><td>Fernanda Alves</td><td>Treino funcional</td><td><span class="status ativo">Confirmado</span></td></tr>
+        </tbody></table></section>
+    </main>
+
+    <footer class="rise-footer" id="contato">
+        <div class="rise-footer-conteudo">
+            <div>
+                <img src="../assets/img/logo (2).png" alt="Logo RiseAPP">
+                <p>RiseAPP — gestão inteligente para personal, aluno e academia.</p>
+            </div>
+            <div>
+                <h3>Acesso rápido</h3>
+                <a href="../index.html">Início</a>
+                <a href="login.html">Aluno</a>
+                <a href="login-personal.html">Personal</a>
+                <a href="../admin/loginadm.html">Admin</a>
+            </div>
+            <div>
+                <h3>Contato</h3>
+                <p>riseapp.com</p>
+                <p>(18) 99523-2423</p>
+            </div>
+        </div>
+        <p class="rise-copy">© 2026 RiseAPP. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

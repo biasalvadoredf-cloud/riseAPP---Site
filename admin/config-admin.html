@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Configurações</title>
+    <link href="../assets/css/estilizar5.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="../assets/css/footer-global.css">
+</head>
+
+<body>
+    <header><img alt="Logo RiseAPP" src="../assets/img/logo.png" />
+        <nav><a href="dashboard-admin.html">Dashboard</a><a href="aluno-admin.html">Alunos</a><a href="treinos-admin.html">Treinos</a><a href="exercicio-admin.html">Exercícios</a><a href="desafios-admin.html">Desafios</a><a href="feed-admin.html">Feed</a><a href="relatorio-admin.html">Relatórios</a><a href="financeiro.html">Financeiro</a><a href="personais.html">Personais</a><a href="matriculas.html">Matrículas</a><a class="menu-ativo" href="config-admin.html">Configurações</a></nav>
+        <p class="modo-admin">Administrador</p>
+    </header>
+    <main class="caixa">
+
+        <section class="conteudo">
+            <div class="topo-pagina">
+                <h1>Configurações</h1>
+                <div class="topo-acoes">
+                    <button class="btn-visualizar">👁 Visualizar perfil público</button>
+                    <button class="btn-salvar">Salvar alterações</button>
+                </div>
+            </div>
+            <!-- ABAS -->
+            <div class="abas">
+                <a class="aba ativa" href="#">Perfil</a>
+                <a class="aba" href="#">Academia</a>
+                <a class="aba" href="#">Usuários</a>
+                <a class="aba" href="#">Planos</a>
+                <a class="aba" href="#">Notificações</a>
+                <a class="aba" href="#">Integrações</a>
+                <a class="aba" href="#">Segurança</a>
+                <a class="aba" href="#">Backup</a>
+            </div>
+            <!-- CONTEÚDO DAS ABAS -->
+            <div class="painel-config">
+                <!-- COLUNA ESQUERDA: PERFIL DO PERSONAL -->
+                <div class="coluna-esquerda">
+                    <div class="card-config">
+                        <p class="card-titulo">Perfil do Personal</p>
+                        <div class="perfil-foto">
+                            <div class="foto-circulo">
+                                <img alt="Personal Trainer" src="../assets/img/foto-carlos.png" />
+                            </div>
+                            <div class="perfil-info">
+                                <p class="perfil-nome">Personal Trainer</p>
+                                <p class="perfil-cargo">Administrador</p>
+                            </div>
+                        </div>
+                        <div class="campo-grupo">
+                            <label class="campo-label">Nome completo</label>
+                            <input class="campo-input" type="text" value="Personal Trainer" />
+                        </div>
+                        <div class="campo-grupo">
+                            <label class="campo-label">E-mail</label>
+                            <input class="campo-input" type="email" value="personal@riseapp.com" />
+                        </div>
+                        <div class="campo-grupo">
+                            <label class="campo-label">Telefone</label>
+                            <input class="campo-input" type="tel" value="(18) 99999-9999" />
+                        </div>
+                        <div class="campo-grupo">
+                            <label class="campo-label">Bio</label>
+                            <textarea
+                                class="campo-textarea">Especialista em treinamento de força e emagrecimento. Ajudo pessoas a alcançarem sua melhor versão todos os dias.</textarea>
+                        </div>
+                        <button class="btn-alterar-senha">🔒 Alterar senha</button>
+                    </div>
+                </div>
+                <!-- COLUNA DIREITA -->
+                <div class="coluna-direita">
+                    <!-- ACADEMIA -->
+                    <div class="card-config">
+                        <div class="card-topo">
+                            <div class="card-topo-esquerda">
+                                <span class="icone-card">🏠</span>
+                                <div>
+                                    <p class="card-titulo">Academia</p>
+                                    <p class="card-subtitulo">Gerencie as informações da sua academia.</p>
+                                </div>
+                            </div>
+                            <button class="btn-editar">Editar</button>
+                        </div>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <p class="info-label">Nome da academia</p>
+                                <p class="info-valor">Rise Training</p>
+                            </div>
+                            <div class="info-item">
+                                <p class="info-label">CNPJ</p>
+                                <p class="info-valor">12.345.678/0001-99</p>
+                            </div>
+                            <div class="info-item">
+                                <p class="info-label">Telefone</p>
+                                <p class="info-valor">(18) 3333-3333</p>
+                            </div>
+                            <div class="info-item">
+                                <p class="info-label">E-mail</p>
+                                <p class="info-valor">contato@risetraining.com.br</p>
+                            </div>
+                        </div>
+                        <div class="info-item" style="margin-top: 10px;">
+                            <p class="info-label">Endereço</p>
+                            <p class="info-valor">Rua das Acácias, 123 - Vila Madalena, São Paulo - SP, 05432-010</p>
+                        </div>
+                    </div>
+                    <!-- NOTIFICAÇÕES -->
+                    <div class="card-config">
+                        <div class="card-topo">
+                            <div class="card-topo-esquerda">
+                                <span class="icone-card">🔔</span>
+                                <div>
+                                    <p class="card-titulo">Notificações</p>
+                                    <p class="card-subtitulo">Escolha como você deseja receber notificações.</p>
+                                </div>
+                            </div>
+                            <button class="btn-editar">Editar preferências</button>
+                        </div>
+                        <div class="notif-lista">
+                            <div class="notif-item">
+                                <div class="notif-info">
+                                    <span class="notif-icone">✉️</span>
+                                    <div>
+                                        <p class="notif-nome">E-mail</p>
+                                        <p class="notif-desc">Receba notificações por e-mail</p>
+                                    </div>
+                                </div>
+                                <div class="toggle ativo"></div>
+                            </div>
+                            <div class="notif-item">
+                                <div class="notif-info">
+                                    <span class="notif-icone">🔔</span>
+                                    <div>
+                                        <p class="notif-nome">Push</p>
+                                        <p class="notif-desc">Receba notificações no navegador</p>
+                                    </div>
+                                </div>
+                                <div class="toggle ativo"></div>
+                            </div>
+                            <div class="notif-item">
+                                <div class="notif-info">
+                                    <span class="notif-icone">💬</span>
+                                    <div>
+                                        <p class="notif-nome">SMS</p>
+                                        <p class="notif-desc">Receba notificações por SMS</p>
+                                    </div>
+                                </div>
+                                <div class="toggle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- INTEGRAÇÕES -->
+                    <div class="card-config">
+                        <div class="card-topo">
+                            <div class="card-topo-esquerda">
+                                <span class="icone-card">🔗</span>
+                                <div>
+                                    <p class="card-titulo">Integrações</p>
+                                    <p class="card-subtitulo">Conecte o RiseApp com outras ferramentas.</p>
+                                </div>
+                            </div>
+                            <button class="btn-editar">Gerenciar integrações</button>
+                        </div>
+                        <div class="integ-lista">
+                            <div class="integ-item">
+                                <div class="integ-logo">
+                                    <!-- Espaço para logo Google Calendar -->
+                                </div>
+                                <div>
+                                    <p class="integ-nome">Google Calendar</p>
+                                    <p class="integ-status conectado">● Conectado</p>
+                                </div>
+                            </div>
+                            <div class="integ-item">
+                                <div class="integ-logo">
+                                    <!-- Espaço para logo Strava -->
+                                </div>
+                                <div>
+                                    <p class="integ-nome">Strava</p>
+                                    <p class="integ-status conectado">● Conectado</p>
+                                </div>
+                            </div>
+                            <div class="integ-item">
+                                <div class="integ-logo">
+                                    <!-- Espaço para logo MyFitnessPal -->
+                                </div>
+                                <div>
+                                    <p class="integ-nome">MyFitnessPal</p>
+                                    <p class="integ-status desconectado">● Desconectado</p>
+                                </div>
+                            </div>
+                            <div class="integ-item">
+                                <div class="integ-logo">
+                                    <!-- Espaço para logo Zapier -->
+                                </div>
+                                <div>
+                                    <p class="integ-nome">Zapier</p>
+                                    <p class="integ-status desconectado">● Desconectado</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- BACKUP -->
+                    <div class="card-config">
+                        <div class="card-topo">
+                            <div class="card-topo-esquerda">
+                                <span class="icone-card">☁️</span>
+                                <div>
+                                    <p class="card-titulo">Backup de dados</p>
+                                    <p class="card-subtitulo">Faça backup das informações da sua conta.</p>
+                                </div>
+                            </div>
+                            <button class="btn-editar">Fazer backup agora</button>
+                        </div>
+                        <div class="backup-info">
+                            <div class="backup-item">
+                                <p class="info-label">Último backup</p>
+                                <p class="info-valor">24 de abril de 2024 às 03:15</p>
+                            </div>
+                            <div class="backup-item">
+                                <p class="info-label">Próximo backup automático</p>
+                                <p class="info-valor">25 de abril de 2024 às 03:00</p>
+                            </div>
+                            <div class="backup-item">
+                                <p class="info-label">Status</p>
+                                <p class="status-ativo">Ativo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- NAVBAR INFERIOR (só aparece no mobile) -->
+
+
+    <footer class="rise-footer" id="contato">
+        <div class="rise-footer-conteudo">
+            <div>
+                <img src="../assets/img/logo (2).png" alt="Logo RiseAPP">
+                <p>RiseAPP — gestão inteligente para personal, aluno e academia.</p>
+            </div>
+            <div>
+                <h3>Acesso rápido</h3>
+                <a href="../index.html">Início</a>
+                <a href="../personal/login.html">Aluno</a>
+                <a href="../personal/login-personal.html">Personal</a>
+                <a href="loginadm.html">Admin</a>
+            </div>
+            <div>
+                <h3>Contato</h3>
+                <p>riseapp.com</p>
+                <p>(18) 99523-2423</p>
+            </div>
+        </div>
+        <p class="rise-copy">© 2026 RiseAPP. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
